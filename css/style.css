@@ -1,0 +1,891 @@
+	*{
+		box-sizing: border-box;
+		font-family: 微軟正黑體;
+	}
+	body{
+		margin:auto;
+		
+	}
+	ul,li,p{
+		margin:0px;
+		padding:0px;
+	}
+	#background{/*襯底圖片*/
+		background-image: url("/images/background_1.jpg");
+	}
+	h3,h5{
+		margin:0px;
+	}
+	#greenBar{/*fixed在頂的綠bar*/
+		background-color: rgb(56,102,14);
+		height:15px;
+		width:100%;
+		position: fixed;
+		top:0px;
+		z-index: 9999;
+	}
+	#whiteBar{/*fixed在頂的白bar*/
+		background-color: rgb(255,255,255);
+		height:5px;
+		width:100%;
+		position: fixed;
+		z-index: 9999;
+		top:15px;
+	}
+
+
+	/*nav區塊*/
+	nav{
+		width:100%;
+		background-color: rgb(56,102,14);
+		position: fixed;
+		top:20px;
+		z-index: 9999;
+	}
+	nav div{
+		width:100%;
+		max-width: 1130px;
+		margin:auto;
+		height:100px;
+	}
+	nav ul{
+		float:left;
+		height:80px;
+		padding:0px;
+		margin:auto;
+	}
+	nav ul li{
+		float:left;
+		width:100px;
+		margin-left: 40px;
+		list-style-type: none;
+	}
+	#logo_img{
+		width:200px;
+		float:left;
+	}	
+	nav div,nav img{
+		height:80px;
+		transition-delay: 0.1s;
+	}
+	#navbar-1{
+		background-image: url("../images/navbar/navbar-1-1.jpg");
+	}
+	#navbar-1:hover{
+		background-image: url("../images/navbar/navbar-1-2.jpg");
+	}
+	#navbar-2{
+		background-image: url("../images/navbar/navbar-2-1.jpg");
+	}
+	#navbar-2:hover{
+		background-image: url("../images/navbar/navbar-2-2.jpg");
+	}
+	#navbar-3{
+		background-image: url("../images/navbar/navbar-3-1.jpg");
+	}
+	#navbar-3:hover{
+		background-image: url("../images/navbar/navbar-3-2.jpg");
+	}
+	#navbar-4{
+		background-image: url("../images/navbar/navbar-4-1.jpg");
+	}
+	#navbar-4:hover{
+		background-image: url("../images/navbar/navbar-4-2.jpg");
+	}
+	#navbar-5{
+		background-image: url("../images/navbar/navbar-5-1.jpg");
+	}
+	#navbar-5:hover{
+		background-image: url("../images/navbar/navbar-5-2.jpg");
+	}
+	#navbar-6{
+		background-image: url("../images/navbar/navbar-6-1.jpg");
+	}
+	#navbar-6:hover{
+		background-image: url("../images/navbar/navbar-6-2.jpg");
+	}
+	/*slider區塊*/
+	#slider{
+		position: absolute;
+		top:100px;
+		width:100%;
+		height:calc(100vh - 100px);	
+	}
+	#slider img{
+		position: absolute;
+		width:100%;
+		height:calc(100vh - 100px) !important;
+	}
+	section{
+        max-width:1130px;
+		width:100%;
+		margin:auto;
+		margin-top:100vh;
+	}
+
+	/*各選單主標題、副標題*/
+	.heading-primary{/*主標題*/
+		text-align: center;
+		color: rgb(56,102,14) ;
+        font-weight: 400;
+		font-size: 34px;
+		padding-top: 20px;
+	}
+	.heading-primary-hr{/*主標下的hr*/
+		display: block;
+		margin:0 auto;
+	}
+	.heading-sub{/*副標題*/
+		color: #154733 ;
+        font-weight: 400;
+		font-size: 26px;	
+	}
+
+	.sub_link:hover{
+		cursor: pointer;
+		color: #154733 ;
+		text-shadow: 1px 1px green;
+	}
+	.sub_bar{ /*一群可連結副標題組成的ul*/
+		padding:0px;
+		width:70%;
+		margin:0 auto;
+	}
+	.sub_bar img{  /*給手機板用的list_arrow*/
+		display: none;
+		float:left;
+		margin:8px;
+		margin-top:17px;
+	
+	}
+	.sub_bar li{
+		float:left;
+		list-style:none;
+		margin:5px 46px 0px 46px;
+	}	
+	.selected_menu_sub{/*進入副標題的頁面時，此副標題的CSS*/
+		color: #154733 ;
+		text-shadow: 1px 1px rgb(56,102,14);;
+		font-weight: bold;	
+	}
+	
+	/*menu*/
+	#menu{
+		margin-bottom:20px;
+	}
+	.food{/*商品*/
+		width:25%;
+		padding:1%;
+		float:left;
+	}
+	.food .food_background{/*商品背景色*/
+		border-radius: 25px;
+		background-color: rgb(159,15,2);
+		box-shadow: 5px 5px 10px 2px rgb(29, 2, 0);
+	}
+
+	.food:nth-child(2) .food_background,/*商品背景色*/
+	.food:nth-child(4) .food_background,
+	.food:nth-child(5) .food_background,
+	.food:nth-child(7) .food_background{
+		background-color: rgb(228,204,123);
+		box-shadow: 5px 5px 10px 2px rgb(31, 23, 0);
+	} 	
+	.food h4{ /*商品名稱*/
+		text-align: center;
+		padding-top:20px;
+		margin:0px;
+		font-weight: bold;
+		color:white;
+		font-size: 20px;
+	}
+	.food:nth-child(2) h4,/*商品名稱*/
+	.food:nth-child(4) h4,
+	.food:nth-child(5) h4,
+	.food:nth-child(7) h4{
+		color: rgb(30,27,17);
+	} 
+	.food img{/*商品圖片*/
+		width:80%;
+		margin:0px 25px;
+		 cursor:url("http://ashine0118.myweb.hinet.net/bar6.ani"),pointer;
+        -webkit-transition: 1s ease-in-out;
+    	-moz-transition: 1s ease-in-out;
+    	-o-transition: 1s ease-in-out;
+    	transition: 1s ease-in-out;
+
+	}
+	.food img:hover{/*商品圖片*/
+   	 	-webkit-transform: scale(1.1);
+   		-moz-transform:scale(1.1);
+    	-o-transform: scale(1.1);
+   	    -ms-transform:scale(1.1);
+		transform:scale(1.1);
+	}
+
+	/*關於弘爺、聯絡我們*/
+	#about_background,#join_background,#contact_background{
+		 width:1920px;
+		 margin-left:-395px;
+		 background-color: rgba(230, 217, 177,0.6);
+	}
+	#about{
+		width:100%;
+		max-width: 1130px;
+		margin:auto;
+	}
+		
+	#about h5{
+		margin-top: 30px;
+		margin-left:170px;
+		margin-bottom: 20px;
+		color: #154733 ;
+        font-weight: 400;
+		font-size: 26px;
+	}
+	#contact h5{
+		width:20%;
+		margin-left:75%;
+		margin-top: 30px;
+		color: #154733 ;
+        font-weight: 400;
+		font-size: 26px;
+	}
+
+	#about_company_left_div{/*關於弘爺左下方DIV*/
+		width:37%;
+		background-color: rgb(159,15,2);
+		float:left;
+		border-radius: 25px;
+		box-shadow: 5px 5px 10px 2px rgb(29, 2, 0);
+	}
+	#about_company_left_div p{
+		color:white;
+		font-weight: bold;
+		padding:35px 64px;
+		line-height: 1.3em;
+		font-size: 21px;
+		letter-spacing:8px;
+	}
+	#about_company_right_div{
+		float:left;
+		position: relative;
+		top:-50px;
+		width:52%;
+		left:11%;
+		line-height: 1.8em;
+		font-size: 18px;
+		border-radius: 25px;	
+	}
+	#about_company_right_div h3{
+		margin-left:-0.8em;
+		margin-top:60px;
+	}
+	#about_company_right_div #img_group{
+		margin-left:-1.5em;
+	}
+	#about_company_right_div #img_group .img{
+		width:33.33%;
+		padding:1%;
+		float:left;
+	}
+	#about_company_right_div #img_group .img img{
+		width:100%;
+	}
+
+	#contact{
+		max-width: 1130px;
+		width:100%;
+		margin:auto;
+	}
+	#map{/* 地圖*/
+		width:57%;
+		height:426px;
+		border-radius: 25px;
+		border:1px solid;
+		float:left;
+		border:1px solid black;
+		box-shadow:5px 5px 10px 2px rgb(29, 29, 29);
+		margin-bottom: 40px;
+	}
+
+	#about_headquarters_div{/* 聯絡我們，右下方區塊*/
+		width:38%;
+		background-color: rgb(159,15,2);
+		float:left;
+		margin-left:5%;
+		border-radius: 25px;
+		margin-top:15px;
+		box-shadow: 5px 5px 10px 2px rgb(29, 2, 0);
+	}
+	#about_headquarters_div p{
+		color:white;
+		font-weight: bold;
+		padding:40px;
+		line-height: 2.5em;
+		font-size: 21px;
+	}
+
+	/*最新消息*/
+	#news_container{
+		width:100%;
+		background-color: rgb(159,15,2);
+		border-radius: 25px;
+		padding:30px;
+		margin-bottom: 30px;
+		box-shadow: 5px 5px 10px 2px rgb(29, 2, 0);
+	}
+	#news_container li{
+		list-style-image: url("/images/list_icon.png");
+		padding:12px 2px;
+		margin-left:100px;
+		z-index: 9999;
+	}
+	#news_container li a{
+		color:white;
+		font-size: 18px;
+	}
+	#news_container li img{  /*hot*/
+		margin-left:5px;
+		margin-top:-7px;
+		height:18px;
+	}
+	
+	/*我#join要加盟*/
+	#join{
+		max-width: 1130px;
+		width:100%;
+		padding-bottom: 30px;
+		margin:auto;
+	}
+	#join ul{
+		margin-top:20px;
+	}
+	#join h5{
+		color: #154733 ;
+        font-weight: 400;
+		font-size: 26px;
+		text-align: center;
+	}
+	#join li:nth-child(odd){
+		display: block;
+		float: left;
+		width:17.5%;
+	}
+	#join li:nth-child(even){/*箭頭部分*/
+		display: block;
+		float: left;
+		width:10%;
+		padding:10px 0px 10px 10px;
+	}
+	.arrow{
+		width:100%;
+		height:50px;
+		background-size:contain;
+		background-repeat: no-repeat;
+	}
+	#arrow_1{
+		background-image: url("/images/arrow/arrow_red.png");
+	}
+	#arrow_2{
+		background-image: url("/images/arrow/arrow_green.png");
+	}
+	#arrow_3{
+		background-image: url("/images/arrow/arrow_yellow.png");
+	}
+	.flow{
+		height:70px;
+		border-radius: 25px;
+		position: relative;
+	}
+	#flow_1,#flow_3{
+		background: rgb(60,122,59);
+		box-shadow: 5px 5px 10px 2px rgb(12, 24, 11);
+	}
+	#flow_2{
+		background: rgb(159,15,2);
+		box-shadow: 5px 5px 10px 2px rgb(31, 3, 1);
+	}
+	#flow_4{
+		background: rgb(216,115,2);
+		box-shadow: 5px 5px 10px 2px rgb(32, 17, 0);
+	}
+	.flow p{
+		text-align: center;
+		padding-top:20px;
+		color:white;
+		font-weight: bold;
+		font-size: 18px;
+	}
+	#QA_div{
+		width:20%;
+		margin:auto;
+		margin-top:100px;
+	}
+	#QA_div img{
+		width:30px;
+		margin-left:50px;
+		margin-top:19px;
+		
+	}
+	#QA_div a{
+		font-size: 24px;
+		color: rgb(60,122,59);
+	}
+
+
+	/*服務據點*/
+	table thead, table tr {
+		border-top-width: 1px;
+		border-top-style: solid;
+		border-top-color: rgb(230, 189, 189);
+	}
+	table {
+		width:100%;
+		margin: 20px 0px;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: rgb(230, 189, 189);
+		box-shadow: 5px 5px 10px 2px rgb(29, 2, 0);
+	}
+	table th{
+		text-align: center;
+		font-weight: bold;
+		font-size: 30px;
+		background: rgb(238, 211, 210);
+	}
+	table td, table th {
+		padding: 5px 10px;
+		font-size: 21px;
+		font-family: Verdana;
+		color: rgb(94, 7, 0);
+	}
+	tr td:nth-child(1){
+		text-align: center;
+		width:25%;
+	}
+	tr td:nth-child(2){
+		text-align: center;
+		width:25%;
+	}
+	/* Alternating background colors */
+	table tr:nth-child(even) {
+		background: rgb(238, 211, 210);
+	}
+	table tr:nth-child(odd) {
+		background: #FFF
+	}
+
+	footer{
+		background-color: rgb(56,102,14);
+		height:60px;
+		color:white;
+		font-size: 16px;
+		font-weight: 400;
+		width:100%;
+	}
+	footer div:nth-child(1) {
+		width:39.5%;
+		margin:auto;
+		text-align: center;
+		padding-top:3px;
+	}
+	footer div:nth-child(2) {
+		width:42%;
+		margin:auto;
+		text-align: center;
+		padding-top:3px;
+	}
+	footer div p{
+		float:left;
+		margin:auto;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:777px){
+	body{
+		width:100%;
+		
+	}
+	#han {
+		position: absolute;
+		top:70px;
+		right:10px;
+		width:26px;
+		z-index:9999;
+		cursor: pointer;
+		height:26px;
+	}
+
+	.bar {
+		height: 5px;
+		width: 25px;
+		margin-top:3px;
+		background-color: white;
+
+	}
+	.heading-primary{
+		font-size: 26px;
+	}
+	nav,#greenBar,#whiteBar{
+		position: static;
+	}
+	#navbar {
+		margin-right: 0px;
+		overflow: hidden;
+		opacity: 0;
+		height:0px;
+		width:100%;
+		transition: 0.5s;
+		background-color: black;
+
+	}
+	#navbar li{
+		background-image: none;
+		cursor: pointer;;
+	}
+	#navbar.active{
+		opacity: 1;
+		height:295px;
+	}
+
+	#navbar div {
+		background-image: none;
+			
+		width:90%;
+		margin:auto;
+		height:40px;
+		border-bottom: 1px solid rgb(255, 255, 255);
+		font-size: 20px;
+		margin-top:10px;
+		font-weight: bold;
+		color:white;
+	}
+	#navbar div:hover {
+
+			background-image: none;
+	}
+	nav ul{
+		float:left;
+		height:80px;
+		padding:0px;
+		margin:auto;
+	}
+	nav ul li{
+		width:100%;
+		margin:0px;
+	}
+	.sub_bar{
+		width:100%;
+	}
+	.sub_bar img{
+		display: block;
+		width:20px;
+	}
+	.sub_bar li{
+		clear:both;
+		width:100%;
+
+		margin:0px;
+		border-bottom:2px solid rgb(0, 55, 5);
+		
+	}
+	.sub_bar li h5{
+	font-size: 22px;
+		padding:17px 0px;
+	}
+	#menu ul{
+		height:264px;
+	}
+	#menu h3{
+		text-align: center;
+		padding-top:20px;
+		font-size:26px;
+		color:rgb(56,102,14);
+	}
+	.heading-primary-hr{
+		margin-top:-10px;
+		width:100px;
+	}
+
+ 
+	.hide{
+		display: none;
+	}
+	section{
+		margin-top:0px;
+		padding:0 15px;
+	}
+	.food{
+		width:50%;
+		padding:3%;
+	}
+
+	.food .food_background{
+		border-radius: 5px;
+	}
+
+
+	.food:nth-child(3),
+	.food:nth-child(5),
+	.food:nth-child(7),
+	.food:nth-child(9){
+		padding-left:0px;
+	}
+	.food:nth-child(4),
+	.food:nth-child(6),
+	.food:nth-child(8),
+	.food:nth-child(10){
+		padding-right:0px;
+	}	
+
+	.food:nth-child(3) .food_background,/*商品背景色*/
+	.food:nth-child(6) .food_background,
+	.food:nth-child(7) .food_background,
+	.food:nth-child(10) .food_background{
+		background-color: rgb(159,15,2);
+		box-shadow: 5px 5px 10px 2px rgb(29, 2, 0);
+	}
+	.food:nth-child(4) .food_background,/*商品背景色*/
+	.food:nth-child(5) .food_background,
+	.food:nth-child(8) .food_background,
+	.food:nth-child(9) .food_background{
+		background-color: rgb(228,204,123);
+		box-shadow: 5px 5px 10px 2px rgb(31, 23, 0);
+	}
+
+
+	.food:nth-child(3) h4,/*商品名稱*/
+	.food:nth-child(6) h4,
+	.food:nth-child(7) h4,
+	.food:nth-child(10) h4{
+		color:white;
+	} 
+	.food:nth-child(4) h4,/*商品名稱*/
+	.food:nth-child(5) h4,
+	.food:nth-child(8) h4,
+	.food:nth-child(9) h4{
+		color:  rgb(30,27,17);
+	} 
+
+
+
+
+	.food h4{
+		font-size: 16px;
+		padding-top:10px;
+		height:30px;
+	}
+	.food img{
+		margin:0px 17px;
+	}
+
+	/*關於我們*/
+	#about h3{
+		font-size: 26px;
+	}
+	#about h5{
+		font-size: 22px;
+		padding:0px;
+		margin:0px;
+		text-align: center;
+		
+	}
+	#about_background, #join_background, #contact_background{
+		width:100%;
+		margin:0px;
+		background-color: white;
+	}
+	#about_company_left_div{
+		width:100%;
+		padding:12px 9px;
+		border-radius: 5px;
+	}
+	#about_company_left_div p{
+		width:100%;
+		padding:0;
+		font-size: 16px;
+	}
+	#about_company_right_div{
+		position: static;
+		width:100%;
+		line-height: 1.5em;
+		font-size: 18px;
+		border-radius: 25px;
+		font-size: 16px;	
+	}
+	#about_company_right_div ul {
+		margin-left:20px;
+		margin-top:20px;
+	}
+	#about_company_right_div h3{
+		margin:0px;
+		margin-top:20px;
+	}
+	#about_company_right_div #img_group{
+		margin:0px;
+	}
+	#about_company_right_div #img_group img{
+		border-radius: 5px;
+	}
+	#about_company_right_div #img_group .img{
+		width:100%;
+	}
+	/*最新消息*/
+	#news_container{
+		padding:0px;
+		border-radius: 5px;
+	}
+	#news_container li{
+		padding:16px 10px;
+		margin:0px;
+		list-style: none;
+	}
+	#news_container li img{
+		padding-top:5px;
+
+	}
+
+	/*加盟我們*/
+	.flow{
+		width:100%;
+		height:100%;
+		border-radius: 5px;
+	}
+	.flow p{
+		text-align: center;
+		color:white;
+		font-weight: bold;
+		font-size: 22px;
+		width:30px;
+		margin:auto;
+	}
+	ul li:nth-child(1)  .flow p{
+		padding-top:85px;
+	}
+	ul li:nth-child(3)  .flow p{
+		padding-top:60px;
+	}	
+	ul li:nth-child(5)  .flow p{
+		padding-top:85px;
+	}	
+	ul li:nth-child(7)  .flow p{
+		padding-top:145px;
+	}
+
+
+
+
+	#join li:nth-child(odd){
+		width:11.5%;
+		height:400px;
+	}
+
+	#join li:nth-child(even){
+		width:18%;
+		padding:182px 0px 10px 10px;
+	}
+	#QA_div{
+		width:150px;;
+		margin: auto;
+		padding-top:420px;
+	}
+	#QA_div img{
+		width:30px;
+		margin-left:0px;
+		margin-top:0px;
+		
+	}
+
+
+
+	/*服務據點*/
+	#store ul{
+		height:264px;
+	}
+	#store h3{
+		text-align: center;
+		padding-top:20px;
+		font-size:26px;
+		color:rgb(56,102,14);
+	}
+	#store_1 div,#store_2 div,#store_3 div,#store_4 div{
+		padding:10px 0px;
+	}
+	#store div p:nth-child(1){
+		font-size: 20px;
+		color: rgb(56,102,14);
+		font-weight: bold;
+	}
+	#store div .address{
+		margin-left:8px;
+		width:calc(100% - 21px);
+	}
+
+
+
+	/*聯絡弘爺*/
+
+	#map{
+		width:100%;
+		height:300px;
+		margin-bottom:20px;
+		border-radius: 5px;
+	}
+	#contact h5{
+		display: none;
+	}
+	#about_headquarters_div{
+		width:100%;
+		margin:0px;
+		margin-bottom:20px;
+		border-radius: 5px;
+	}
+	#about_headquarters_div p{
+		padding:20px;
+		font-size: 14px;
+		line-height:1.3em;
+		font-weight: normal;
+	}
+	footer{
+		height:auto;
+	}
+	footer div:nth-child(1){
+		width:95%;
+		padding-top:17px;
+		padding-left: 15px;
+		margin:0px;
+	}
+	footer div:nth-child(2){
+		width:95%;
+		padding-bottom: 20px;
+		padding-left: 15px;
+		margin:0px;
+	}	
+	footer p{
+		font-size: 12px;
+	}
+}
+
+
+
+
+
+
