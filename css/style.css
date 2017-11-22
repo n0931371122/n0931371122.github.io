@@ -869,7 +869,7 @@
 	#menu h3{
 		text-align: center;
 		color:rgb(56,102,14);
-		padding:10px 0px;
+		padding:20px 0px;
 
 	}
 	.heading-primary-hr{
@@ -954,9 +954,7 @@
 
 	#about_background, #join_background, #contact_background{
 		width:100%;
-		background-color: rgba(0,0,0,0);
-		
-
+		background-color: white;
 	}
 	#about_company_left_div{
 		width:100%;
