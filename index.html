@@ -54,7 +54,7 @@
 			<img src="images/sliders/slider-1.jpg">
 			<img src="images/sliders/slider-2.jpg">
 			<img src="images/sliders/slider-3.jpg">
-			<img src="images/sliders/slider-4.jpg">
+			<img src="images/sliders/slider-6.jpg">
 			<img src="images/sliders/slider-5.jpg">
 		</div>
 
@@ -96,13 +96,13 @@
 					<div class="food">
 						<div class="food_background">
 							<h4>阿瑪翠斯鮭魚菠菜麵</h4>
-							<img src="images/foods/series-1/1.png">
+							<img src="images/foods/series-1/9.png">
 						</div>
 					</div>
 					<div class="food">
 						<div class="food_background">
 							<h4>起司雞肉菠菜麵</h4>
-							<img src="images/foods/series-1/2.png">
+							<img src="images/foods/series-1/1.png">
 						</div>
 					</div>
 					<div class="food">
@@ -883,61 +883,86 @@
 		fx: "fade"
 	});
 
-	if ($(window).width() < 777) {
+	$(window).resize(function () {
+		if ($(window).width() < 767 & !$("body").hasClass("for_phone")) {
 
-		$("#slider").addClass("hide");
-		$("#background").css("background-image", "none");
-		$("#navbar-1").html("美食饗宴");
-		$("#navbar-2").html("關於弘爺");
-		$("#navbar-3").html("最新消息");
-		$("#navbar-4").html("我要加盟");
-		$("#navbar-5").html("服務據點");
-		$("#navbar-6").html("聯絡弘爺");
+			$("#menu").show();
+			$("#background").css("background-image", "none");
+			$("#navbar-1").html("美食饗宴");
+			$("#navbar-2").html("關於弘爺");
+			$("#navbar-3").html("最新消息");
+			$("#navbar-4").html("我要加盟");
+			$("#navbar-5").html("服務據點");
+			$("#navbar-6").html("聯絡弘爺");
 
-
-		$("#menu_1").prepend("<h3>特餐餐點</h3><img class='heading-primary-hr' src='images/hr.png'/>");
-		$("#menu_2").prepend("<h3>中西餐點</h3><img class='heading-primary-hr' src='images/hr.png'/>");
-		$("#menu_3").prepend("<h3>漢堡湯種</h3><img class='heading-primary-hr' src='images/hr.png'/>");
-		$("#menu_4").prepend("<h3>精選飲品</h3><img class='heading-primary-hr' src='images/hr.png'/>");
-
-		$("#about").hide();
-		$("#news").hide();
-		$("#join").hide();
-		$("#store").hide();
-		$("#contact").hide();
+			$("#menu_1").prepend("<h3 class='for_phone'>特餐餐點</h3><img class='heading-primary-hr for_phone' src='images/hr.png'/>");
+			$("#menu_2").prepend("<h3 class='for_phone'>中西餐點</h3><img class='heading-primary-hr for_phone' src='images/hr.png'/>");
+			$("#menu_3").prepend("<h3 class='for_phone'>漢堡湯種</h3><img class='heading-primary-hr for_phone' src='images/hr.png'/>");
+			$("#menu_4").prepend("<h3 class='for_phone'>精選飲品</h3><img class='heading-primary-hr for_phone' src='images/hr.png'/>");
 
 
-		var store_area = ["#store_1", "#store_2", "#store_3", "#store_4"];
-		var store_name = ["北部地區", "中部地區", "南部地區", "東部地區"];
-		for (var z = 0; z < 4; z++) {
-			var count_of_data = $(store_area[z] + " table tbody").children().length;
 
-			for (var i = 0; i < count_of_data; i++) {
-				var this_tr = $(store_area[z] + " table tbody tr").eq(i);
-				var td_content = [];
-				for (var j = 0; j < 3; j++) {
-					td_content[j] = this_tr.children("td").eq(j).html();
+			$("#about").hide();
+			$("#news").hide();
+			$("#join").hide();
+			$("#store").hide();
+			$("#contact").hide();
+
+			var store_area = ["#store_1", "#store_2", "#store_3", "#store_4"];
+			var store_name = ["北部地區", "中部地區", "南部地區", "東部地區"];
+			for (var z = 0; z < 4; z++) {
+				var count_of_data = $(store_area[z] + " table tbody").children().length;
+
+				for (var i = 0; i < count_of_data; i++) {
+					var this_tr = $(store_area[z] + " table tbody tr").eq(i);
+					var td_content = [];
+					for (var j = 0; j < 3; j++) {
+						td_content[j] = this_tr.children("td").eq(j).html();
+					}
+					$(store_area[z]).prepend(
+						"<div><p>" +
+						td_content[0] +
+						"</p><p><img src='/images/phone_icon.png' width='13px;'>&nbsp;&nbsp;" +
+						td_content[1] +
+						"</p><img src='/images/address_icon.png' width='13px;' style='float:left;'><p class='address' style='float:left;'>" +
+						td_content[2] +
+						"</p></div><div style='clear:both;'></div>"
+					);
 				}
-				$(store_area[z]).prepend(
-					"<div><p>" +
-					td_content[0] +
-					"</p><p><img src='/images/phone_icon.png' width='13px;'>&nbsp;&nbsp;" +
-					td_content[1] +
-					"</p><img src='/images/address_icon.png' width='13px;' style='float:left;'><p class='address' style='float:left;'>" +
-					td_content[2] +
-					"</p></div><div style='clear:both;'></div>"
-				);
+				$(store_area[z]).prepend("<h3>" + store_name[z] + "</h3><img class='heading-primary-hr' src='images/hr.png'/>");
+				$(store_area[z] + " table").remove();
+
 			}
-			$(store_area[z]).prepend("<h3>" + store_name[z] + "</h3><img class='heading-primary-hr' src='images/hr.png'/>");
-			$(store_area[z] + " table").remove();
+			$("body").addClass("for_phone");
+
+
+
+		} else {
+			$("#background").css("background-image", "url('/images/background_1.jpg')");
+			$("#navbar-1").html("");
+			$("#navbar-2").html("");
+			$("#navbar-3").html("");
+			$("#navbar-4").html("");
+			$("#navbar-5").html("");
+			$("#navbar-6").html("");
+
+			$("h3").remove(".for_phone");
+			$("img").remove(".for_phone");
+
+			$("#about").show();
+			$("#news").show();
+			$("#join").show();
+			$("#store").show();
+			$("#contact").show();
+
+
+			$("body").removeClass("for_phone");
+
+
 		}
+	});
 
 
-
-
-
-
-	}
 	function toggle_navbar() {
 		var navbar = document.querySelector("#navbar");
 		navbar.classList.toggle("active");
