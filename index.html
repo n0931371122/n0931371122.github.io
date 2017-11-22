@@ -882,62 +882,60 @@
 	$("#slider").cycle({
 		fx: "fade"
 	});
+	init();
+	function init() {
+		if ($(window).width() < 767) {
+			if (!$("body").hasClass("for_phone")) {			
+				$("#background").css("background-image", "none");
+				$("#navbar-1").html("美食饗宴");
+				$("#navbar-2").html("關於弘爺");
+				$("#navbar-3").html("最新消息");
+				$("#navbar-4").html("我要加盟");
+				$("#navbar-5").html("服務據點");
+				$("#navbar-6").html("聯絡弘爺");
 
-	$(window).resize(function () {
-		if ($(window).width() < 767 & !$("body").hasClass("for_phone")) {
+				$("#menu_1").prepend("<h3 class='for_phone'>特餐餐點</h3><img class='heading-primary-hr for_phone' src='images/hr.png'/>");
+				$("#menu_2").prepend("<h3 class='for_phone'>中西餐點</h3><img class='heading-primary-hr for_phone' src='images/hr.png'/>");
+				$("#menu_3").prepend("<h3 class='for_phone'>漢堡湯種</h3><img class='heading-primary-hr for_phone' src='images/hr.png'/>");
+				$("#menu_4").prepend("<h3 class='for_phone'>精選飲品</h3><img class='heading-primary-hr for_phone' src='images/hr.png'/>");
+				
+				$("#menu").show();
+				$("#about").hide();
+				$("#news").hide();
+				$("#join").hide();
+				$("#store").hide();
+				$("#contact").hide();
 
-			$("#menu").show();
-			$("#background").css("background-image", "none");
-			$("#navbar-1").html("美食饗宴");
-			$("#navbar-2").html("關於弘爺");
-			$("#navbar-3").html("最新消息");
-			$("#navbar-4").html("我要加盟");
-			$("#navbar-5").html("服務據點");
-			$("#navbar-6").html("聯絡弘爺");
+				var store_area = ["#store_1", "#store_2", "#store_3", "#store_4"];
+				var store_name = ["北部地區", "中部地區", "南部地區", "東部地區"];
+				for (var z = 0; z < 4; z++) {
+					var count_of_data = $(store_area[z] + " table tbody").children().length;
 
-			$("#menu_1").prepend("<h3 class='for_phone'>特餐餐點</h3><img class='heading-primary-hr for_phone' src='images/hr.png'/>");
-			$("#menu_2").prepend("<h3 class='for_phone'>中西餐點</h3><img class='heading-primary-hr for_phone' src='images/hr.png'/>");
-			$("#menu_3").prepend("<h3 class='for_phone'>漢堡湯種</h3><img class='heading-primary-hr for_phone' src='images/hr.png'/>");
-			$("#menu_4").prepend("<h3 class='for_phone'>精選飲品</h3><img class='heading-primary-hr for_phone' src='images/hr.png'/>");
-
-
-
-			$("#about").hide();
-			$("#news").hide();
-			$("#join").hide();
-			$("#store").hide();
-			$("#contact").hide();
-
-			var store_area = ["#store_1", "#store_2", "#store_3", "#store_4"];
-			var store_name = ["北部地區", "中部地區", "南部地區", "東部地區"];
-			for (var z = 0; z < 4; z++) {
-				var count_of_data = $(store_area[z] + " table tbody").children().length;
-
-				for (var i = 0; i < count_of_data; i++) {
-					var this_tr = $(store_area[z] + " table tbody tr").eq(i);
-					var td_content = [];
-					for (var j = 0; j < 3; j++) {
-						td_content[j] = this_tr.children("td").eq(j).html();
+					for (var i = 0; i < count_of_data; i++) {
+						var this_tr = $(store_area[z] + " table tbody tr").eq(i);
+						var td_content = [];
+						for (var j = 0; j < 3; j++) {
+							td_content[j] = this_tr.children("td").eq(j).html();
+						}
+						$(store_area[z]).prepend(
+							"<div><p>" +
+							td_content[0] +
+							"</p><p><img src='/images/phone_icon.png' width='13px;'>&nbsp;&nbsp;" +
+							td_content[1] +
+							"</p><img src='/images/address_icon.png' width='13px;' style='float:left;'><p class='address' style='float:left;'>" +
+							td_content[2] +
+							"</p></div><div style='clear:both;'></div>"
+						);
 					}
-					$(store_area[z]).prepend(
-						"<div><p>" +
-						td_content[0] +
-						"</p><p><img src='/images/phone_icon.png' width='13px;'>&nbsp;&nbsp;" +
-						td_content[1] +
-						"</p><img src='/images/address_icon.png' width='13px;' style='float:left;'><p class='address' style='float:left;'>" +
-						td_content[2] +
-						"</p></div><div style='clear:both;'></div>"
-					);
+					$(store_area[z]).prepend("<h3 class='for_phone'>" + store_name[z] + "</h3><img class='heading-primary-hr' src='images/hr.png'/>");
+					$(store_area[z] + " table").hide();
+
 				}
-				$(store_area[z]).prepend("<h3>" + store_name[z] + "</h3><img class='heading-primary-hr' src='images/hr.png'/>");
-				$(store_area[z] + " table").remove();
 
 			}
 			$("body").addClass("for_phone");
-
-
-
 		} else {
+			$("body").removeClass("for_phone");
 			$("#background").css("background-image", "url('/images/background_1.jpg')");
 			$("#navbar-1").html("");
 			$("#navbar-2").html("");
@@ -954,20 +952,20 @@
 			$("#join").show();
 			$("#store").show();
 			$("#contact").show();
-
-
+			var store_area = ["#store_1", "#store_2", "#store_3", "#store_4"];
+			for (var i = 0; i < 4; i++) {
+				$(store_area[i]).children("div").remove();
+				$(store_area[i] + " table").show();
+			}
 			$("body").removeClass("for_phone");
-
-
 		}
+	}
+	$(window).resize(function () {
+		init();
 	});
-
-
 	function toggle_navbar() {
 		var navbar = document.querySelector("#navbar");
 		navbar.classList.toggle("active");
-
-
 	}
 
 

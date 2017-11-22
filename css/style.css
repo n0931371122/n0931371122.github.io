@@ -10,6 +10,9 @@
 		margin:0px;
 		padding:0px;
 	}
+	#han{
+		display:none;
+	}
 	#background{/*襯底圖片*/
 		background-image: url("/images/background_1.jpg");
 	}
@@ -108,12 +111,13 @@
 	#slider{
 		position: absolute;
 		top:100px;
-		width:100%;
+		margin:auto;
+		width:100% !important;
 		height:calc(100vh - 100px);	
 	}
 	#slider img{
 		position: absolute;
-		width:100%;
+		width:100% !important;
 		height:calc(100vh - 100px) !important;
 	}
 	section{
@@ -225,7 +229,7 @@
 
 	/*關於弘爺、聯絡我們*/
 	#about_background,#join_background,#contact_background{
-		 width:1920px;
+		 width:100vw;
 		 margin-left:-395px;
 		 background-color: rgba(230, 217, 177,0.6);
 	}
@@ -540,6 +544,9 @@
 		margin-top:3px;
 		background-color: white;
 
+	}
+	#slider {
+		display: none;
 	}
 	.heading-primary{
 		font-size: 26px;
