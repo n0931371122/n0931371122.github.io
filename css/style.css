@@ -955,6 +955,8 @@
 	#about_background, #join_background, #contact_background{
 		width:100%;
 		background-color: white;
+		margin:0px;
+
 	}
 	#about_company_left_div{
 		width:100%;
