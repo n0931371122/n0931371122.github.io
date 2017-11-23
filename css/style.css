@@ -751,6 +751,12 @@
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 10d1003a66e5d5a2325646a014f41f9c03e91241
 
 
 
@@ -760,9 +766,12 @@
 
 
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 10d1003a66e5d5a2325646a014f41f9c03e91241
 @media screen and (max-width:500px){
 	body{
 		width:100%;
@@ -870,7 +879,10 @@
 		text-align: center;
 		color:rgb(56,102,14);
 		padding:20px 0px;
+<<<<<<< HEAD
 		font-size: 22px;
+=======
+>>>>>>> 10d1003a66e5d5a2325646a014f41f9c03e91241
 
 	}
 	.heading-primary-hr{
