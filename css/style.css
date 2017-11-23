@@ -4,6 +4,7 @@
 	}
 	body{
 		margin:auto;
+		overflow-x: hidden;
 		
 	}
 	ul,li,p{
@@ -56,11 +57,12 @@
 		height:80px;
 		padding:0px;
 		margin:auto;
+		width:calc(100% - 200px);
 	}
 	nav ul li{
 		float:left;
 		width:100px;
-		margin-left: 40px;
+		margin-left: 5%;
 		list-style-type: none;
 	}
 	#logo_img{
@@ -134,10 +136,12 @@
         font-weight: 400;
 		font-size: 34px;
 		padding-top: 20px;
+		padding-bottom: 10px;
 	}
 	.heading-primary-hr{/*主標下的hr*/
 		display: block;
 		margin:0 auto;
+		width:100%;
 	}
 	.heading-sub{/*副標題*/
 		color: #154733 ;
@@ -230,7 +234,6 @@
 	/*關於弘爺、聯絡我們*/
 	#about_background,#join_background,#contact_background{
 		 width:100vw;
-		 margin-left:-395px;
 		 background-color: rgba(230, 217, 177,0.6);
 	}
 	#about{
@@ -246,6 +249,7 @@
 		color: #154733 ;
         font-weight: 400;
 		font-size: 26px;
+		display:block;
 	}
 	#contact h5{
 		width:20%;
@@ -436,7 +440,10 @@
 		font-size: 24px;
 		color: rgb(60,122,59);
 	}
-
+	#about_background, #join_background, #contact_background{
+		width:100vw;
+		
+	}
 
 	/*服務據點*/
 	table thead, table tr {
@@ -514,6 +521,226 @@
 
 
 
+@media screen and (max-width:1024px){
+	#slider{
+		display: none;
+	}
+	nav div, nav img{
+		height:60px;
+	}
+	nav ul{
+		height:60px;
+	}
+	#logo_img{
+		width:150px;
+	}
+	nav ul li{
+		margin-left:0px;
+		width:75px;
+	}
+	nav ul li div{
+
+		width:75px;
+		background-size: contain;
+	}
+	section{
+		padding-top:80px;
+		margin:auto;
+		width:98%;
+	}	
+	.heading-primary-hr{
+		width:100%;
+	}
+		
+	.sub_bar{
+		margin:auto;
+		height:20px;
+	}
+	.sub_bar li{
+		padding:3px 10px;
+		width:25%;
+		margin:0px;
+	}
+	.heading-sub{
+		font-size: 22px;
+	}
+
+	.food{
+		width:33.33%;
+		padding:2%;
+	}
+	.food h4{
+		font-size: 16px;
+		padding-top:10px;
+	}
+	.food:nth-child(1) .food_background,/*商品背景色*/
+	.food:nth-child(3) .food_background,
+	.food:nth-child(5) .food_background,
+	.food:nth-child(7) .food_background{
+		background-color: rgb(159,15,2);
+		box-shadow: 5px 5px 10px 2px rgb(29, 2, 0);
+	}
+	.food:nth-child(2) .food_background,/*商品背景色*/
+	.food:nth-child(4) .food_background,
+	.food:nth-child(6) .food_background,
+	.food:nth-child(8) .food_background{
+		background-color: rgb(228,204,123);
+		box-shadow: 5px 5px 10px 2px rgb(31, 23, 0);
+	}
+
+
+	.food:nth-child(1) h4,/*商品名稱*/
+	.food:nth-child(3) h4,
+	.food:nth-child(5) h4,
+	.food:nth-child(7) h4{
+		color:white;
+	} 
+	.food:nth-child(2) h4,/*商品名稱*/
+	.food:nth-child(4) h4,
+	.food:nth-child(6) h4,
+	.food:nth-child(8) h4{
+		color:  rgb(30,27,17);
+	} 
+
+
+	#about h5{
+		display:none;
+		
+	}
+	#about_company_left_div{
+		width:95%;
+		margin:auto;
+		float:none;
+		border-radius: 10px;
+	}
+	#about_company_left_div p{
+		width:100%;
+		padding:20px;
+		font-size: 16px;
+	}
+	#about_company_right_div{
+		position: static;
+		width:98%;
+		line-height: 1.5em;
+		font-size: 18px;
+		border-radius: 25px;
+		font-size: 16px;
+
+		margin-top:20px;
+	} 
+	#about_company_right_div ul{
+		margin-left:5%;
+	}
+	#about_company_right_div h3{
+		margin-left:3%;
+	}
+	#about_background, #join_background, #contact_background{
+		width:100%;
+		margin:0px;			
+	}
+	#about_company_right_div #img_group{
+		margin-left:1%;
+		height:50px;
+	}
+	#news_container li{
+		margin-left:30px;
+	}
+	/*加盟我們*/
+	#join ul{
+		width:96%;
+		margin:auto;
+	}
+	.flow{
+		width:100%;
+		height:100%;
+		border-radius: 5px;
+	}
+	.flow p{
+		text-align: center;
+		color:white;
+		font-weight: bold;
+		font-size: 22px;
+		width:30px;
+		margin:auto;
+	}
+	ul li:nth-child(1)  .flow p{
+		padding-top:85px;
+	}
+	ul li:nth-child(3)  .flow p{
+		padding-top:60px;
+	}	
+	ul li:nth-child(5)  .flow p{
+		padding-top:85px;
+	}	
+	ul li:nth-child(7)  .flow p{
+		padding-top:145px;
+	}
+			
+	#join li:nth-child(odd){
+		width:11.5%;
+		height:400px;
+	}
+
+	#join li:nth-child(even){
+		width:18%;
+		padding:178px 0px 10px 25px;
+	}
+	#QA_div{
+		width:150px;;
+		margin: auto;
+		padding-top:420px;
+	}
+	#QA_div img{
+		width:30px;
+		margin-left:0px;
+		margin-top:0px;
+		
+	}
+	/*聯絡弘爺*/
+	#map{
+		width:96%;
+		height:400px;
+		margin-top:20px;
+		margin-left:auto;
+		margin-right:auto;
+		border-radius: 5px;
+		float:none;
+	}
+	#contact h5{
+		display: none;
+	}
+	#about_headquarters_div{
+		width:96%;
+		margin:auto;
+		margin-bottom:20px;
+		border-radius: 5px;
+		float:none;
+	}
+	#about_headquarters_div p{
+		padding:20px;
+		font-size: 20px;
+		line-height:1.3em;
+		font-weight: normal;
+	}
+	footer{
+		height:auto;
+	}
+
+	footer div:nth-child(1){
+		width:70%;
+		padding-top:17px;
+	}
+	footer div:nth-child(2){
+		width:70%;
+		padding-bottom: 20px;
+		padding-left: 15px;
+	}	
+	footer div p{
+		font-size: 20px;
+		float:none;
+		margin:auto;
+	}
+}
 
 
 
@@ -523,19 +750,36 @@
 
 
 
-@media screen and (max-width:777px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px){
 	body{
 		width:100%;
 		
 	}
-	#han {
+	#greenBar{
+		height:10px;
+	}
+	#ham {
 		position: absolute;
-		top:70px;
+		top:40px;
 		right:10px;
 		width:26px;
 		z-index:9999;
 		cursor: pointer;
 		height:26px;
+		display: block;
 	}
 
 	.bar {
@@ -620,17 +864,18 @@
 		padding:17px 0px;
 	}
 	#menu ul{
-		height:264px;
+		height:286px;
 	}
 	#menu h3{
 		text-align: center;
-		padding-top:20px;
-		font-size:26px;
 		color:rgb(56,102,14);
+		padding:20px 0px;
+		font-size: 22px;
+
 	}
 	.heading-primary-hr{
 		margin-top:-10px;
-		width:100px;
+		width:100%;
 	}
 
  
@@ -638,6 +883,7 @@
 		display: none;
 	}
 	section{
+		width:100%;
 		margin-top:0px;
 		padding:0 15px;
 	}
@@ -705,26 +951,19 @@
 		margin:0px 17px;
 	}
 
-	/*關於我們*/
-	#about h3{
-		font-size: 26px;
-	}
-	#about h5{
-		font-size: 22px;
-		padding:0px;
-		margin:10px 0px;
-		text-align: center;
-		
-	}
+	/*關於弘爺*/
+
 	#about_background, #join_background, #contact_background{
 		width:100%;
-		margin:0px;
 		background-color: white;
+		margin:0px;
+
 	}
 	#about_company_left_div{
 		width:100%;
 		padding:12px 9px;
 		border-radius: 5px;
+		margin-top:20px;
 	}
 	#about_company_left_div p{
 		width:100%;
@@ -773,6 +1012,9 @@
 	}
 
 	/*加盟我們*/
+	#join ul{
+		margin-top:20px;
+	}
 	.flow{
 		width:100%;
 		height:100%;
@@ -832,7 +1074,8 @@
 	#store h3{
 		text-align: center;
 		padding-top:20px;
-		font-size:26px;
+		padding-bottom: 20px;
+		font-size:22px;
 		color:rgb(56,102,14);
 	}
 	#store_1 div,#store_2 div,#store_3 div,#store_4 div{
@@ -880,18 +1123,93 @@
 	footer div:nth-child(1){
 		width:95%;
 		padding-top:17px;
-		padding-left: 15px;
+		padding-left: 13px;
+		text-align: left;
 		margin:0px;
 	}
 	footer div:nth-child(2){
 		width:95%;
 		padding-bottom: 20px;
-		padding-left: 15px;
+		padding-left: 13px;
+		text-align: left;
 		margin:0px;
 	}	
-	footer p{
+	footer  div p{
 		font-size: 12px;
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	#ham {
+		position: absolute;
+		top:46px;
+		right:10px;
+		width:26px;
+		z-index:9999;
+		cursor: pointer;
+		height:26px;
+		display: block;
+	  }
+	  .menu-global {
+		backface-visibility: hidden;
+		position: absolute;
+		left: 0;
+		border-top: 3px solid white;
+		width: 100%;
+		transition: 0.55s;
+	  }
+	  .menu-top {
+		top: 0;
+	  }
+	  .menu-middle {
+		top: 7px;
+	  }
+	  .menu-bottom {
+		top: 14px;
+	  }
+	  .menu-top-click {
+		backface-visibility: hidden;
+		top: 10px;
+		transform: rotate(50deg);
+		transition: 0.55s 0.5s;
+	  }
+	  .menu-middle-click {
+		opacity: 0;
+	  }
+	  .menu-bottom-click {
+		backface-visibility: hidden;
+		top: 10px;
+		transform: rotate(-410deg);
+		transition: 0.55s 0.5s;
+	  }
+
+
+
+
+
+
+
+
+	
 }
 
 
