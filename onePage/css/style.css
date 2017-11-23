@@ -870,6 +870,7 @@
 		text-align: center;
 		color:rgb(56,102,14);
 		padding:20px 0px;
+		font-size: 22px;
 
 	}
 	.heading-primary-hr{
@@ -1073,7 +1074,8 @@
 	#store h3{
 		text-align: center;
 		padding-top:20px;
-		font-size:26px;
+		padding-bottom: 20px;
+		font-size:22px;
 		color:rgb(56,102,14);
 	}
 	#store_1 div,#store_2 div,#store_3 div,#store_4 div{
