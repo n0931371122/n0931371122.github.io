@@ -344,7 +344,7 @@
 		box-shadow: 5px 5px 10px 2px rgb(29, 2, 0);
 	}
 	#news_container li{
-		list-style-image: url("/images/list_icon.png");
+		list-style-image: url("../images/list_icon.png");
 		padding:12px 2px;
 		margin-left:100px;
 		z-index: 9999;
@@ -393,13 +393,13 @@
 		background-repeat: no-repeat;
 	}
 	#arrow_1{
-		background-image: url("/images/arrow/arrow_red.png");
+		background-image: url("../images/arrow/arrow_red.png");
 	}
 	#arrow_2{
-		background-image: url("/images/arrow/arrow_green.png");
+		background-image: url("../images/arrow/arrow_green.png");
 	}
 	#arrow_3{
-		background-image: url("/images/arrow/arrow_yellow.png");
+		background-image: url("../images/arrow/arrow_yellow.png");
 	}
 	.flow{
 		height:70px;
@@ -424,21 +424,6 @@
 		color:white;
 		font-weight: bold;
 		font-size: 18px;
-	}
-	#QA_div{
-		width:20%;
-		margin:auto;
-		margin-top:100px;
-	}
-	#QA_div img{
-		width:30px;
-		margin-left:50px;
-		margin-top:19px;
-		
-	}
-	#QA_div a{
-		font-size: 24px;
-		color: rgb(60,122,59);
 	}
 	#about_background, #join_background, #contact_background{
 		width:100vw;
