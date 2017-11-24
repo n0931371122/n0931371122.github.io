@@ -800,6 +800,7 @@
 	#navbar.active{
 		opacity: 1;
 		height:295px;
+		margin-bottom: 15px;
 	}
 
 	#navbar div {
@@ -850,6 +851,7 @@
 	}
 	#menu ul{
 		height:286px;
+		margin-bottom: 10px;
 	}
 	#menu h3{
 		text-align: center;
