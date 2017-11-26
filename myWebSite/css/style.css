@@ -35,6 +35,7 @@ p,span{
   
   #p2, #p3, #p4, #p5 {
     left: 200%;
+    
   }
   
 
@@ -298,11 +299,44 @@ p,span{
   }
 
 }
+html {
+  overflow: hidden;
 
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  overflow: hidden;
+  position: relative;
+
+  box-sizing: border-box;
+  margin: 0;
+  height: 100%;
+}
 
 
 
 @media screen and (max-width:600px){
+html {
+  overflow: hidden;
+
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  overflow: hidden;
+  position: relative;
+
+  box-sizing: border-box;
+  margin: 0;
+  height: 100%;
+}
   #p1 section,#p2 section,#p3 section,#p4 section{
     width:92%;
     margin-left:0%;
