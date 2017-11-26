@@ -307,8 +307,8 @@
 							</a>
 						</div>
 					</div>
-					<div class="food" data-aos="fade-up" >
-						<div class="food_background" data-aos="fade-up"> 
+					<div class="food" data-aos="fade-up">
+						<div class="food_background" data-aos="fade-up">
 							<h4>夏威夷冰茶</h4>
 							<a href="images/foods/series-4/2.png" data-lightbox="image-4" data-title="夏威夷冰茶">
 								<img src="images/foods/series-4/2.png">
@@ -1006,9 +1006,11 @@
 				$("body").addClass("for_phone");
 			}
 			else {
-				$must_margin_left = ($("section").width() - $(window).innerWidth()) / 2;
+				if ($(window).outerWidth() > 1130) {
+					$must_margin_left = ($("section").width() - $(window).innerWidth()) / 2;
+					$("#about_background,#join_background,#contact_background").css("margin-left", ($("section").width() - $(window).innerWidth()) / 2)
 
-				$("#about_background,#join_background,#contact_background").css("margin-left", ($("section").width() - $(window).innerWidth()) / 2)
+				}
 
 				$("body").removeClass("for_phone");
 				$("#background").css("background-image", "url('images/background_1.jpg')");

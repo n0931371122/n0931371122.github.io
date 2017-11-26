@@ -506,7 +506,7 @@
 
 
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1080px){
 	#slider{
 		display: none;
 	}
@@ -670,16 +670,8 @@
 		width:18%;
 		padding:178px 0px 10px 25px;
 	}
-	#QA_div{
-		width:150px;;
-		margin: auto;
-		padding-top:420px;
-	}
-	#QA_div img{
-		width:30px;
-		margin-left:0px;
-		margin-top:0px;
-		
+	table td, table th {
+		font-size: 18px;
 	}
 	/*聯絡弘爺*/
 	#map{
@@ -733,6 +725,19 @@
 
 
 
+@media screen and (max-width:650px){
+	nav ul{
+		width:calc(100% - 150px);
+	}
+	nav ul li{
+		width:16%;
+	}
+	.sub_bar {
+		width:90%;
+
+	}
+
+}
 
 
 
