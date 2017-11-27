@@ -164,7 +164,20 @@ p,span{
   #p2 section{
     width:60%;
   }
-
+  .owl-theme .owl-nav [class*=owl-]{
+    margin:50px;
+    padding:22px 35px ;
+    color:black;
+    font-size:21px;
+    font-weight:bold;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(54, 54, 54);
+  }
+  .item{
+    border-radius: 10px;
+    overflow: hidden;
+    margin:0px 15px;
+  }
 
   #p3 section{
     width:60%;
@@ -196,7 +209,7 @@ p,span{
     margin-top:190px;
   }
   #p3 #finish{
-    margin-top:190px !important;
+    margin-top:190px ;
     display: block;
   }
 #p4 section{
@@ -224,6 +237,10 @@ p,span{
 #finish_div p{
   color:white;
 }
+#finish_div p{
+  color:rgb(252, 248, 57);
+  font-weight: bold;
+}
 
 
 
@@ -262,7 +279,7 @@ p,span{
 
 
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1024px){
   #menu{
     min-width:120px;
     padding:10px 0px;
@@ -319,6 +336,28 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:600px){
 html {
   overflow: hidden;
@@ -338,7 +377,7 @@ body {
   height: 100%;
 }
   #p1 section,#p2 section,#p3 section,#p4 section{
-    width:92%;
+    width:98%;
     margin-left:0%;
   }
  /*toggle-icon*/
@@ -424,7 +463,13 @@ body {
 #p3 h4{
   display: none;
 }
-
+.owl-dots{
+  display: none;
+}
+.owl-theme .owl-nav [class*=owl-]{
+  margin:27px;
+  padding:10px;
+}
 .title{
   font-size: 28px;
 }
@@ -484,6 +529,19 @@ body {
     position: absolute;
     left:50%;
     transform: translateX(-50%);
+  }
+  #finish_div{
+    margin-top:30px;
+
+
+  }
+  #finish_div p{
+    font-size: 21px;
+    color:rgb(252, 248, 57);
+    font-weight: bold;
+  }
+  .icon{
+    font-size: 20px;
   }
 }
 
