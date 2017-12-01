@@ -407,7 +407,7 @@ iframe {
     background-position: center;
     background-size: cover;
     width: 500px;
-    height: 350px;
+    padding-bottom: 10px;
 }
 
 #news_1 p,
