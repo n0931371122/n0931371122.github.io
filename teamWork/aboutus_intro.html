@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<script src="js/forHead.js"></script>
+
+<div class=" start_form_top sub" id="aboutus_sub">
+    <div class="text-center" id="food_1">
+        <a href="aboutus_intro.html" class="font-weight-bold link">關於公司</a>
+    </div>
+    <div class=" text-center" id="food_2">
+        <a href="aboutus_recruit.html" class="font-weight-bold link">人才招募</a>
+    </div>
+    <div class=" text-center" id="food_3">
+        <a href="aboutus_join.html" class=" font-weight-bold link">加盟資訊</a>
+    </div>
+    <div class=" text-center" id="food_4">
+        <a href="aboutus_contact.html" class=" font-weight-bold link">連絡我們</a>
+    </div>
+</div>
+<div class="row mb-4 mt-4 start">
+    <img src="images/aboutus/about barista.jpg" width="100%" height="100%;" alt="">
+</div>
+<div class="row mb-4">
+    <img class="col-lg-6" src="images/aboutus/about_02.jpg" id="img_2" alt="">
+    <div class="col-lg-6 intro_font">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;西雅圖極品咖啡是國內第一個以重烘焙起家的咖啡連鎖店，一九九七年三月創業至今，已在台灣及北京開設了多家門市， 同時也開發許多周邊商品於各通路販售,並致力於發展咖啡技術，期望能帶給消費者美好的咖啡生活</div>
+</div>
+<div class="row mb-4">
+    <div class="cow-lg-12 intro_font mb-4 ">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我們的濃縮咖啡飲料專用豆，絕不假手他人或由國外烘焙，全由自己的專業師傅親手操爐，確保咖啡豆最重要的新鮮度。不容諱言，創業之初我們也迷信國外品牌，從西雅圖進口烘焙好的咖啡豆，卻讓我們飽嘗不新鮮的苦頭，因為濃縮咖啡豆的烘焙度很深，容易走味，一旦出爐，不論以真空包裝或單向排氣閥【degassing-valve】，都無法確保重焙豆的新鮮度，大約一兩個月風味就已走衰。糟糕的是，從國外進口的咖啡豆即使以空運方式，加上報關手續，最快也要半個多月，有時拿到的咖啡豆還是一個月前烘焙，新鮮度完全沒有保障，即使吧台師傅手藝再好，也很難做出香醇的咖啡。</div>
+    <div class="cow-lg-12 intro_font mb-4"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;經此教訓我們跳出挾洋自重的迷思，於一九九八年設立Barista Coffee Roasting Company 供應自家店面最新鮮咖啡豆，雖然投資金額龐大，回收不易，但為了咖啡豆的品質，我們絕不妥協。新鮮度是西雅圖極品咖啡最引以為傲的利器。經過多年胼手胝足的奮鬥，西雅圖極品咖啡由一家個人創業的咖啡店，成為多家門市的中型連鎖體系，不但掌握經營技術，也致力於咖啡烘焙的研發，並期望以良好品牌知名度、店面操作實績、以及咖啡烘焙技術的作為我們努力的依歸，同時朝著華人第一專業品牌咖啡食品集團的目標邁進。</div>
+</div>
+</div>
+<!--forHead.js的container-->
+<script src="js/forFoot.js"></script>
+<script src="js/forJs.js"></script>
+<script>
+    $(window).resize(function () {
+
+        resize();
+    });
+    function resize() {
+        if ($(window).outerWidth() < 500) {
+            $("#aboutus_sub div").eq(0).children().addClass("active");
+        }
+    }
+    function init() {
+        resize();
+    }
+    init();
+
+</script>
+</body>
+
+</html>

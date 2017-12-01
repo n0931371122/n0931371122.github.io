@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<script src="js/forHead.js"></script>
+<div class="start_form_top sub" id="news_sub">
+    <div class="text-center">
+        <a href="news_news.html" class="font-weight-bold link">最新消息</a>
+    </div>
+    <div class=" text-center">
+        <a href="news_ads.html" class="font-weight-bold link">電視廣告</a>
+    </div>
+</div>
+<div id="news_1" class="start">
+    <p class="font-weight-bold">2017-08-28　西雅圖鑽石濾掛限定販售門市</p>
+    <img src="/images/news/news_1_1.jpg" width="100%">
+    <img src="/images/news/news_1_2.jpg" width="100%">
+</div>
+<div id="news_2">
+    <p class="font-weight-bold">2017-06-15 2017家族卡紅利點數兌換</p>
+    <img src="/images/news/news_2.jpg" width="100%">
+</div>
+</div>
+<!--forHead.js的container-->
+<script src="js/forFoot.js"></script>
+<script src="js/forJs.js"></script>
+<script>
+    $(window).resize(function () {
+        resize();
+    });
+    function resize() {
+        if ($(window).outerWidth() < 500) {
+         
+           $ ("#news_sub").show();
+            $("#news_sub div").eq(0).children().addClass("active");
+        } else {
+            $("#news_sub").hide();
+        }
+    }
+    function init() {
+        resize();
+    }
+    init();
+
+
+
+</script>
+</body>
+
+</html>
