@@ -45,7 +45,7 @@ document.write("  </div>");
 
 
 
-document.write("     <nav class='navbar my_navbar navbar-expand-lg fixed-top' style='background-color:rgb(132,2,0)'>");
+document.write("     <nav class='navbar my_navbar navbar-expand-lg fixed-top' style='background-color:rgb(150,2,0)'>");
 document.write("         <div class='container'>");
 document.write("             <div class=\'collapse navbar-collapse\' id=navbarSupportedContent>");
 document.write("                 <ul class='navbar-nav mr-auto' style='width:100%;'>");

@@ -3,7 +3,8 @@ body {
     width: 100%;
     font-family: 微軟正黑體;
 }
-*{
+
+* {
     font-size: 20px;
 }
 
@@ -33,39 +34,41 @@ body {
     background-size: cover;
     box-shadow: 3px 3px 10px rgb(56, 0, 0);
 }
-#carouselExampleIndicators img{
+
+#carouselExampleIndicators img {
     border-radius: 15px;
-   
 }
-#carouselExampleIndicators{
+
+#carouselExampleIndicators {
     border-radius: 15px;
     box-shadow: 2px 2px 2px rgb(49, 47, 45);
     overflow: hidden;
 }
+
 footer {
     margin-top: 20px;
 }
-h1{
+
+h1 {
     color: rgb(132, 2, 0);
     font-weight: bold;
 }
+
 #navbarSupportedContent .sub_selected {
-    color: rgb(251,215,115);
-    font-size: 28px;
+    color: rgb(251, 215, 115);
 }
 
 #navbarSupportedContent a:hover {
-    color: rgb(249,235,195) !important;
-    
+    color: rgb(249, 235, 195) !important;
 }
-#hot_food a:hover{
-    text-decoration:none;
+
+#hot_food a:hover {
+    text-decoration: none;
 }
+
 .nav-item {
     width: 20%;
 }
-
-
 
 #navbarSupportedContent a {
     font-size: 24px;
@@ -77,7 +80,7 @@ h1{
     background-color: rgba(132, 2, 0, 0.7);
     left: 50%;
     transform: translateX(-50%);
-    top:60px;
+    top: 60px;
     border-radius: 0px 0px 15px 15px;
     z-index: -9999;
 }
@@ -102,7 +105,8 @@ h1{
 .join_h p:nth-child(2) {
     margin-left: 20px;
 }
-#carouselExampleIndicators div:hover{
+
+#carouselExampleIndicators div:hover {
     text-decoration: none;
 }
 
@@ -110,15 +114,16 @@ h1{
     box-shadow: 2px 2px 2px rgb(49, 47, 45);
     border-radius: 15px;
     overflow: hidden;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
-.food img:hover{
+
+.food img:hover {
     -webkit-transform: scale(0.99);
     transform: scale(0.99);
     box-shadow: 0.5px 0.5px 1px rgb(49, 47, 45);
 }
+
 .food p {
     text-align: center;
     margin-top: 10px;
@@ -164,11 +169,13 @@ h1{
     box-shadow: 2px 2px 2px rgb(32, 32, 32);
     cursor: pointer;
 }
+
 #send_button:hover {
     padding: 10px 90px;
     box-shadow: 1px 1px 1px rgb(32, 32, 32);
     cursor: pointer;
 }
+
 .form-group *,
 #opinion {
     font-size: 26px;
@@ -193,7 +200,6 @@ textarea {
 
 
 /* aboutus_intro.html */
-
 
 
 /* aboutus_join.html */
@@ -291,30 +297,21 @@ h2 {
     margin-top: 30px;
 }
 
-
-
-
-
-
-
-
-
-
 #food-swiper-container .food-swiper-slide {
     text-align: center;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 2px 2px 2px rgb(49, 47, 45);
-    -webkit-transition:transform .3s ease-in-out;
-    transition:transform .3s ease-in-out;
-   
-    
+    -webkit-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
 }
+
 #food-swiper-container .food-swiper-slide:hover {
     -webkit-transform: scale(0.99);
     transform: scale(0.99);
-    box-shadow: 0.5px 0.5px 1px rgb(49, 47, 45);   
+    box-shadow: 0.5px 0.5px 1px rgb(49, 47, 45);
 }
+
 #for_phone_food .food p:nth-child(3) {
     display: block;
 }
@@ -339,6 +336,26 @@ h2 {
     width: 100%;
 }
 
+.swiper-container-horizontal>.swiper-pagination-bullets {
+    top: 460px;
+}
+
+#ads_swiper-container {
+    padding-bottom: 100px;
+}
+
+#ads_swiper-container a {
+    text-decoration: none;
+}
+
+#ads_swiper-container p {
+    margin: 0px;
+    font-size: 16px;
+    color: rgb(132, 2, 0);
+    position: relative;
+    top: 100%
+}
+
 
 /* news.ads */
 
@@ -350,6 +367,10 @@ h2 {
 #ads-swiper-wrapper .swiper-slide {
     background-size: cover;
     background-position: center;
+}
+
+.modal-content {
+    background-image: url("../images/background.png");
 }
 
 .gallery-thumbs {
@@ -375,6 +396,19 @@ iframe {
 
 
 /* news_news.html */
+
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 350px;
+}
 
 #news_1 p,
 #news_2 p {
@@ -477,41 +511,42 @@ table tr:nth-child(odd) {
 }
 
 footer div:nth-child(1) p:nth-child(1) {
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 5px;
 }
 
 footer div:nth-child(1) p:nth-child(2) {
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 4.5px;
 }
 
 footer div:nth-child(1) p:nth-child(3) span:nth-child(1) {
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 4.5px;
 }
 
 footer div:nth-child(1) p:nth-child(3) span:nth-child(2) {
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 1.8px;
 }
 
 footer div:nth-child(1) p:nth-child(4) {
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 1.2px;
 }
 
 #family_last_p {
     text-indent: -2em;
 }
-#nine{
+
+#nine {
     font-size: 1.5rem;
 }
 
 @media screen and (max-width:1024px) {}
 
 @media screen and (max-width:500px) {
-    *{
+    * {
         font-size: 14px;
     }
     h2 {
@@ -616,7 +651,7 @@ footer div:nth-child(1) p:nth-child(4) {
         border-radius: 10px;
         margin-bottom: 10px;
     }
-    #carouselExampleIndicators img{
+    #carouselExampleIndicators img {
         border-radius: 10px;
     }
     .food {
@@ -631,7 +666,7 @@ footer div:nth-child(1) p:nth-child(4) {
         font-size: 16px;
         font-weight: bold;
     }
-    #navbarSupportedContent .sub_selected{
+    #navbarSupportedContent .sub_selected {
         font-size: 24px;
     }
     .row {
@@ -723,12 +758,11 @@ footer div:nth-child(1) p:nth-child(4) {
     }
     #store_sub div {
         width: 100%;
-        margin-left:0px;
+        margin-left: 0px;
         border-radius: 10px;
-        
     }
-    #data_for_phone div{
-        margin-top:20px;
+    #data_for_phone div {
+        margin-top: 20px;
     }
     #map {
         margin-top: 40px;
@@ -803,5 +837,28 @@ footer div:nth-child(1) p:nth-child(4) {
     .lb-image {
         width: 100%!important;
         height: auto !important;
+    }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        background-repeat: no-repeat;
+    }
+    #ads_swiper-container a {
+        background-size: contain;
+    }
+    #ads_swiper-container p {
+        margin-left: 30px;
+        font-size: 14px;
+    }
+    .swiper-container {
+        padding-top: 0px;
+    }
+    #ads_swiper-container {
+        padding-bottom: 50px;
+    }
+    .modal-dialog{
+        margin-top:100px;
     }
 }
