@@ -12,8 +12,8 @@ document.write("      <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.c
 document.write("      <link rel='stylesheet' href='css/lightbox.min.css'>");
 document.write("      <link rel='stylesheet' href='css/swiper.min.css'>");
 document.write("      <link href='css/aos.css' rel='stylesheet'>");
-document.write("      <link rel='stylesheet' href='../css/style.css'>");
-document.write("      <script src='../js/jquery-3.2.1.js'></script>");
+document.write("      <link rel='stylesheet' href='css/style.css'>");
+document.write("      <script src='js/jquery-3.2.1.js'></script>");
 document.write("      <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>");
 
 document.write("      <title>西雅圖咖啡BARISTA</title>");
