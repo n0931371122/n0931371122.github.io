@@ -293,10 +293,6 @@ h2 {
     font-weight: bold;
 }
 
-#food-swiper-container {
-    margin-top: 30px;
-}
-
 #food-swiper-container .food-swiper-slide {
     text-align: center;
     border-radius: 15px;
@@ -336,9 +332,7 @@ h2 {
     width: 100%;
 }
 
-.swiper-container-horizontal>.swiper-pagination-bullets {
-    top: 460px;
-}
+
 
 #ads_swiper-container {
     padding-bottom: 100px;
@@ -346,6 +340,7 @@ h2 {
 
 #ads_swiper-container a {
     text-decoration: none;
+    height:500px;
 }
 
 #ads_swiper-container p {
@@ -353,7 +348,7 @@ h2 {
     font-size: 16px;
     color: rgb(132, 2, 0);
     position: relative;
-    top: 100%
+    top: 103%
 }
 
 
@@ -847,6 +842,7 @@ footer div:nth-child(1) p:nth-child(4) {
     }
     #ads_swiper-container a {
         background-size: contain;
+        height:500px;
     }
     #ads_swiper-container p {
         margin-left: 30px;
