@@ -26,7 +26,6 @@ document.write("  <a href='index.html'><img  id='logo'  src='images/logo.png' al
 document.write("  <a href='https://www.facebook.com/baristacoffee.tw' id='fb'></a>");
 document.write("  <div class='container'>");
 
-<<<<<<< HEAD
 document.write(" <div id='ham' onclick='toggle_navbar()'>");
 document.write("  <span class='menu-global menu-top'></span>");
 document.write(" <span class='menu-global menu-middle'></span>");
@@ -37,31 +36,6 @@ document.write("     <nav class='navbar my_navbar navbar-expand-lg navbar-expand
 document.write("         <div class='container'>");
 document.write("             <div class=\'collapse navbar-collapse\' id=navbarSupportedContent>");
 document.write("                 <ul class='navbar-nav mr-auto' >");
-=======
-
-
-
-document.write("  <div class='ham' onclick='toggle_menu()'>");
-document.write("  <div class='bar'></div>");
-document.write(" <div class='bar'></div>");
-document.write("  <div class='bar'></div>");
-document.write("  </div>");
-
-
-
-
-
-    
-    
-    
-
-
-
-document.write("     <nav class='navbar my_navbar navbar-expand-lg fixed-top' style='background-color:rgb(150,2,0)'>");
-document.write("         <div class='container'>");
-document.write("             <div class=\'collapse navbar-collapse\' id=navbarSupportedContent>");
-document.write("                 <ul class='navbar-nav mr-auto' style='width:100%;'>");
->>>>>>> f591b538d3c1abb296f0adb0b5becf4de1ef00d5
 
 document.write("                     <li class='nav-item  text-center dropdown'>");
 document.write("                         <a class='nav-link text-white font-weight-bold'  href='food.html?food=1'>產品資訊</a>");
@@ -105,7 +79,6 @@ document.write("       </div>");
 document.write("    </nav>");
 
 document.write("  <script>");
-<<<<<<< HEAD
 document.write("    $('#logo').fadeIn(1500)");
 document.write("  </script>");
 
@@ -127,31 +100,3 @@ function toggle_navbar() {
 
 
 
-=======
-
-document.write(" if($(window).outerWidth() > 500){");
-
-document.write("    x=$('#navbarSupportedContent').position().left;");
-document.write("    $('#logo').css('left',x-120);");
-
-
-
-document.write("   }else{}");
-
-
-
-document.write("    $('#logo').fadeIn(1500)");
-
-document.write("  </script>");
-
-
-
-            
-                
-                   
-                       
-                       
-                            
-                                
-                                  
->>>>>>> f591b538d3c1abb296f0adb0b5becf4de1ef00d5

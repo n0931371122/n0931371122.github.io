@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <script src="js/forHead.js"></script>
-<<<<<<< HEAD
 <script>
     $("body").css("height","2000");
 </script>
 <div class="start sub" id="food_sub" style="display:none;">
-=======
-
-<div class="row start sub " id="food_sub" style="display:none;">
->>>>>>> f591b538d3c1abb296f0adb0b5becf4de1ef00d5
     <div class="col-md-2  text-center offset-md-1" id="food_1">
         <a href="food.html?food=1" class="font-weight-bold link">飲&nbsp;品&nbsp;類</a>
     </div>
@@ -27,12 +22,8 @@
 </div>
 
 <div id="for_phone_food" class="mt-4"></div>
-<<<<<<< HEAD
 
 <div class="swiper-container mb-4 mt-3 pb-5" id="food-swiper-container" style="display:none;" >
-=======
-<div class="swiper-container mb-4" id="food-swiper-container" style="display:none;">
->>>>>>> f591b538d3c1abb296f0adb0b5becf4de1ef00d5
     <div class="swiper-wrapper">
     </div>
     <div class="swiper-button-next"></div>
@@ -41,16 +32,8 @@
     <div class="swiper-pagination"></div>
 
 </div>
-<<<<<<< HEAD
 </div>
 <!--forHead.js的container-->
-=======
-
-</div>
-<!--forHead.js的container-->
-
-
->>>>>>> f591b538d3c1abb296f0adb0b5becf4de1ef00d5
 <script src="js/forJs.js"></script>
 <script src="js/forFoot.js"></script>
 
@@ -66,15 +49,9 @@
     ]
     var food_english_name_array = [
         ["Barista", "Lattino", "Milky Way", "Mocha", "Chai Latte", "Cappuccino", "Iced Cappuccino", "Iced Rice & Peanut Milk Latte", "Iced Mocha", "Iced Lattino", "Iced Soy Milk Latt", "Iced Latte", "Iced Americano", "Iced Milky Way", "Iced Flavored Latte", "Mocha Frio", "Tango Frio", "Coffee Frio", "Blueberry Tango Frio", "Iced Yorkshire Tea Latte", "Yorkshire Tea Latte", "grape juice", "grape fruit juice", "Orange juice", "Iced Milk", "Milk", "Cocoa", "Iced Cocoa"],
-<<<<<<< HEAD
         ["Hawaiian", "Vegetarian", "Smoked Beef-Lee", "Chicken Breast", "Tuna", "Beef Tortilla", "Chicken Tortilla"],
         ["Pork Chop au Gratin with Tomato Sauce", "Chicken Thigh with Garlic Sauce", "Gold Paris Seafood Gratin", "Spicy Seafood Risotto with Tomato Sauce", "Garlic Pork Risotto with Tomato Sauce", "Chicken with Preserved Tofu", "Dijon Mustard Fish Fillet", "Chicken Risotto with Cream Sauce and Pumpkin", "Potato Goulash", "Mushroom Risotto with Cream Sauce", "Fresh Vegetable Curry Cup", "Spaghetti with Clam and White Wine", "Chicken Spaghetti with Cream Sauce and Pumpkin", "Garlic Pork Spaghetti with Tomato Sauce", "Spicy Seafood Spaghetti with Tomato Sauce", "Mushroom Spaghetti with Cream Sauce", "Seafood Chowder Lasagna", "Mushroom Lasagna", "Roasted Half Chicken with Italian Spices"],
         ["Thick Toas", "Bagel", "Cheese and Butter Bread", "Pancake", "Egg Salad Sandwich", "Focaccia Sandwich", "Cereal Burger", "Slipper Bread", "Croissant", "Fruit And Oats Breakfast"],
-=======
-        ["Hawaiian", "Vegetarian", "Smoked Beef-Lee", "堡 Chicken Breast", "Tuna", "Beef Tortilla", "Chicken Tortilla"],
-        ["Pork Chop au Gratin with Tomato Sauce", "Chicken Thigh with Garlic Sauce", "Gold Paris Seafood Gratin", "Spicy Seafood Risotto with Tomato Sauce", "Garlic Pork Risotto with Tomato Sauce", "Chicken with Preserved Tofu", "Dijon Mustard Fish Fillet", "Chicken Risotto with Cream Sauce and Pumpkin", "Potato Goulash", "Mushroom Risotto with Cream Sauce", "Fresh Vegetable Curry Cup", "Spaghetti with Clam and White Wine", "Chicken Spaghetti with Cream Sauce and Pumpkin", "Garlic Pork Spaghetti with Tomato Sauce", "Spicy Seafood Spaghetti with Tomato Sauce", "Mushroom Spaghetti with Cream Sauce", "Seafood Chowder Lasagna", "Mushroom Lasagna", "Roasted Half Chicken with Italian Spices"],
-        ["Thick Toas", "Bagel", "麵包 Cheese and Butter Bread", "Pancake", "Egg Salad Sandwich", "Focaccia Sandwich", "Cereal Burger", "Slipper Bread", "Croissant", "Fruit And Oats Breakfast"],
->>>>>>> f591b538d3c1abb296f0adb0b5becf4de1ef00d5
         ["BARISTA", "BLUE MOUNTAIN STYLE COFFEE LATTE", "BARISTA INSTANT LATTE", "HAZELUNT LATTE", "VANILLA LATTE", "MANDHELING BRAZIL STYLE", "GOURMET DRIP COFFEE", "WOLF CHIEF INSTANT COFFEE LATTE", "BUFFALO BOVINE M.B INSTANT COFFEE", "BROWN BEAR CARAMEL INSTANT", "SEATTLE COURMET SPECIAL BLEND", "BALD EAGLE BLUE MOUNTAIN BLEND", "HUMMINGBIRO M.B BLEND", "YORKSHIRE TEA", "EARL GREY TEA"]
     ]
     var file;
@@ -89,21 +66,10 @@
         default: index = 0; file = 'a';
     }
     var length = food_array[index];
-<<<<<<< HEAD
     function resize() {
         if ($(window).outerWidth() > 500) {   
             $("#food_sub").addClass("row");
             $("#food_sub").show();  
-=======
-
-
-
-    function resize() {
-
-        if ($(window).outerWidth() > 500) {
-            $("#food_sub").show();
-            $("food-swiper-container").show();
->>>>>>> f591b538d3c1abb296f0adb0b5becf4de1ef00d5
             $("#food_sub").addClass("start");
             $("#food_sub").removeClass("start_form_top");
             var element = "";
@@ -138,20 +104,13 @@
             });
         } else {
             if (!$("#for_phone_food").hasClass("for_phone")) {
-<<<<<<< HEAD
                 $("#food-swiper-container").hide();
                 $("#food_sub").removeClass("row");
-=======
->>>>>>> f591b538d3c1abb296f0adb0b5becf4de1ef00d5
                 $("#food_sub").show();
                 $("#food_sub").addClass("start_form_top");
                 $("#food_sub").removeClass("start");
                 var element = "";
-<<<<<<< HEAD
                 
-=======
-                $("#food-swiper-container").hide();
->>>>>>> f591b538d3c1abb296f0adb0b5becf4de1ef00d5
                 $("#for_phone_food").show();
                 for (var i = 1; i <= length; i++) {
                     food_name = i < 10 ? "0" + i : i;
@@ -168,45 +127,14 @@
                 $("#for_phone_food").append(element);
                 var sub_index = index + 1;
                 $(".sub div:nth-child(" + sub_index + ") .link").addClass("active");
-<<<<<<< HEAD
                 $(".swiper-wrapper").hide();
-=======
-
-                $(".swiper-wrapper").hide();
-
-
-
-                var swiper = new Swiper('.swiper-container', {
-                    slidesPerView: 1,
-                    slidesPerColumn: 1,
-                    spaceBetween: 20,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        type: 'fraction',
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    }
-                });
->>>>>>> f591b538d3c1abb296f0adb0b5becf4de1ef00d5
                 $("#for_phone_food").addClass("for_phone");
             }
 
         }
-<<<<<<< HEAD
         setTimeout(function(){$("footer").css("height","auto")},50);
         setTimeout(function(){$("body").css("height","auto")},50);
     }        
-=======
-        
-         
-
-    }
-    setTimeout(function () { $("footer").css("height", "auto"); }, 50);
-   
-   
->>>>>>> f591b538d3c1abb296f0adb0b5becf4de1ef00d5
     $(window).resize(function () {
         resize();
     })
@@ -215,21 +143,10 @@
     }
     init();
 
-<<<<<<< HEAD
-=======
-
-
-
-
->>>>>>> f591b538d3c1abb296f0adb0b5becf4de1ef00d5
     lightbox.option({
         'resizeDuration': 200,
         'wrapAround': true
     })
-<<<<<<< HEAD
-=======
-
->>>>>>> f591b538d3c1abb296f0adb0b5becf4de1ef00d5
     $("#navbarSupportedContent .nav-link").eq(index).addClass("sub_selected");
 
 </script>
