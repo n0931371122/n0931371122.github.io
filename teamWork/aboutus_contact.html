@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<script src="js/forHead.js"></script>
+<div class="start_form_top sub" id="aboutus_sub">
+    <div class="text-center" id="food_1">
+        <a href="aboutus_intro.html" class="font-weight-bold link">關於公司</a>
+    </div>
+    <div class=" text-center" id="food_2">
+        <a href="aboutus_recruit.html" class="font-weight-bold link">人才招募</a>
+    </div>
+    <div class=" text-center" id="food_3">
+        <a href="aboutus_intro.html" class=" font-weight-bold link">加盟資訊</a>
+    </div>
+    <div class=" text-center" id="food_4">
+        <a href="aboutus_contact.html" class=" font-weight-bold link">連絡我們</a>
+    </div>
+</div>
+<!-- nav -->
+
+<div class="start frame">
+    <h2 id="contact_h2">聯絡我們</h2>
+    <form action="/action_page.php" class="mt-3">
+        <div class="form-group">
+            <label for="email">姓名:</label>
+            <input type="email" class="form-control" id="" placeholder="Enter name" name="">
+        </div>
+        <div class="form-group">
+            <label for="pwd">電話:</label>
+            <input type="password" class="form-control" id="" placeholder="Enter phone number" name="">
+        </div>
+        <div class="form-group">
+            <label for="email">信箱:</label>
+            <input type="email" class="form-control" id="" placeholder="Enter email" name="">
+        </div>
+        <div class="form-group">
+            <label for="pwd">地址:</label>
+            <input type="password" class="form-control" id="" placeholder="Enter address" name="">
+        </div>
+        <label for="pwd" id="opinion">寶貴意見:</label>
+        <div>
+            <textarea rows="10" cols="50"></textarea>
+        </div>
+        <div class="about_p" style="position:relative">
+
+            <button id="send_button" type="submit" class="btn btn-default">送出</button>
+        </div>
+    </form>
+</div>
+</div>
+
+<!--forHead.js的container-->
+<script src="js/forFoot.js"></script>
+<script src="js/forJs.js"></script>
+<script>
+    $(window).resize(function () {
+
+        resize();
+    });
+    function resize() {
+        if ($(window).outerWidth() < 500) {
+            $("#aboutus_sub div").eq(3).children().addClass("active");
+        }
+    }
+    function init() {
+        resize();
+    }
+    init();
+
+</script>
+</body>
+
+</html>

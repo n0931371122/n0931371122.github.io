@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<script src="js/forHead.js"></script>
+
+<h2 id="start" class="start text-center font-weight-bold pt-3" style="color: rgb(132, 2, 0);">西雅圖極品咖啡 二代家族卡相關說明</h2>
+<h2 id="family_card" class=" text-center font-weight-bold" style="color: rgb(132, 2, 0);">BARISTA COFFEE FAMILY CARD</h2>
+
+<h4 class="family_h4">(一) 二代家族卡使用說明</h4>
+<p class="family_p">二代家族卡空卡每張售價100元(僅為卡片費用，不可做儲值金使用) ，可重覆儲值，每張卡最高儲值金額為6,000元整，每次儲值以 1,000元為單位。儲值時不開立發票，持二代家族卡消費時則開立 當次消費金額發票。您儲值後可以使用此卡購買店內各式飲料、餐
+    點及周邊商品，若您自行攜帶杯子來消費可享有5元之環保折扣。
+</p>
+
+<h4 class="family_h4">(二) 二代家族卡保管注意事項</h4>
+<p class="family_p"> 二代家族卡須遠離高溫及潮溼，且勿與多張感應式晶片卡片同時觸 碰感應區，避免造成無法感應判斷或扣款等異常狀況；並勿將卡片 放於口袋內，以避免不小心擠壓造成損毀。</p>
+
+<h4 class="family_h4">(三) 紅利點數回饋與使用方法</h4>
+<p class="family_p">二代家族卡單次儲值金額達1,000元可獲得紅利點數乙點，儲值越 多，紅利點數越多。您可以選擇以二代家族卡內的紅利點數兌換當 期紅利商品；使用紅利點數兌換商品時恕不開立發票與憑證。
+</p>
+
+<h4 class="family_h4">(四) 卡片資料查詢</h4>
+<p class="family_p">全台西雅圖極品咖啡門市都可查詢卡片內的儲值金餘額、紅利點及 各類點數餘額。</p>
+
+<h4 class="family_h4">(五) 卡片遺失要如何處理</h4>
+<p class="family_p"> 本卡發行時為不記名卡，若遺失視同現金遺失，恕無法補發餘額或 紅利，請妥善保管。</p>
+
+<h4 class="family_h4">(六) 二代家族卡若毀壞要如何處理</h4>
+<p class="family_p"> 本卡可重覆使用多次加值，卡體、晶片保固兩年，購買後除有瑕疵 外，恕不辦理換卡，保固期間內如有非人為因素毀壞導致無法正常 使用，可申請換卡，本公司保有換發卡片款式之權利。</p>
+
+<h4 class="family_h4">(七) 消費者服務與諮詢</h4>
+<p class="family_p"> 本卡使用說明未盡事宜，將於本公司門市及網站公告為主，或請電 洽本公司服務電話。<br>
+西雅圖極品咖啡官方網站：www.barista.com.tw<br>
+消費者服務專線：0800-081-398<br>
+全國性消費者服務專線：1950</p>
+
+<h4 class="family_h4">(八) 二代家族卡儲值金退費處理:</h4>
+<ol>
+    <li>二代家族卡儲值金無使用期限，若您因故欲退二代家族卡內的儲 值金不再使用，請電洽西雅圖極品咖啡消費者服務專線 0800-081-398，由客服人員協助處理</li>
+    <li>二代家族卡儲值金退費作業時間為約30個工作天，且需全額退 費恕無法辦理部份餘額退費。二代家族卡儲值金退費以電匯方式 存入消費者指定帳戶 ( 限消費者本人之國內帳戶 )</li>
+    <li>紅利點數為活動優惠贈出，故不在退費範圍內。</li>
+
+</ol>
+<p class="family_p" id="family_last_p">
+    <span style="color: rgb(132, 2, 0);" id="nine">(九)</span>
+    本卡餘額款項已存入發行人開立於板信商銀之信託專戶，信託存續 期間為最後一次加值日起算一年，另有關發行人與板信商銀之信託 約定內容，請詳見板信商銀網站：www.bop.com.tw
+</p>
+</div>
+<!--container -->
+</div>
+<!--forHead.js的container-->
+<script src="js/forFoot.js"></script>
+<script src="js/forJs.js"></script>
+
+<script>
+    $(window).resize(function () {
+        resize();
+    });
+    function resize() {
+        if ($(window).outerWidth() < 500) {
+            $("#start").addClass("start_form_top");
+            $("#start").removeClass("start");
+
+            $("#start").html("西雅圖極品咖啡<br>二代家族卡相關說明");
+            $("#family_card").html("BARISTA COFFEE<br>FAMILY CARD");
+        }
+        else {
+            $("#start").addClass("start");
+            $("#start").removeClass("start_form_top");
+            $("#start").html("西雅圖極品咖啡 二代家族卡相關說明");
+            $("#family_card").html("BARISTA COFFEEFAMILY CARD");
+        }
+    }
+    function init() {
+        resize();
+    }
+    init();
+</script>
+</body>
+
+</html>

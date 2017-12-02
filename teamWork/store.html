@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<script src="js/forHead.js"></script>
+<div id="start" class="row start ">
+    <div class="col " id="store_sub">
+
+        <div class="text-center font-weight-bold " onclick="change_area(1)">北部地區</div>
+        <div class="text-center font-weight-bold " onclick="change_area(2)">中部地區</div>
+        <div class="text-center font-weight-bold " onclick="change_area(3)">南部地區</div>
+    </div>
+    <div id="map" class=" col">
+    </div>
+</div>
+<div style="clear:both;"></div>
+<table>
+    <tr>
+        <th>門市</th>
+        <th>電話</th>
+        <th>地址</th>
+        <th>營業時間</th>
+    </tr>
+    <tr>
+        <td>榮星紅樓店</td>
+        <td>(02)2504-6005</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/Barista+coffee+shop-Star+Red+House/@25.0626069,121.5388515,17z/data=!3m1!4b1!4m5!3m4!1s0x3442abe33f193daf:0x1b907e94a27aa35f!8m2!3d25.0626069!4d121.5410402"
+                target="_blank">台北市中山區民權東路三段3號
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+        <td>07:00~22:30 (一)~(日)</td>
+    </tr>
+    <tr>
+        <td>台大店</td>
+        <td>(02)2364-4922</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E6%A5%B5%E5%93%81%E5%92%96%E5%95%A1+%E5%8F%B0%E5%A4%A7%E5%BA%97/@25.0183619,121.5312272,17z/data=!3m1!4b1!4m5!3m4!1s0x3442a98964bd2ae3:0x67752c2e22e9444!8m2!3d25.0183619!4d121.5334159"
+                target="_blank">台北市大安區新生南路三段88號
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+        <td>07:10~22:00(日)~(四)
+            <br>07:10~22:30(五)~(六)</td>
+    </tr>
+    <tr>
+        <td>新遠企店</td>
+        <td>(02)2739-7775</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E6%A5%B5%E5%93%81%E5%92%96%E5%95%A1%E6%96%B0%E9%81%A0%E4%BC%81%E9%96%80%E5%B8%82/@25.0261992,121.5407764,15z/data=!4m8!1m2!2m1!1z5Y-w5YyX5biC5aSn5a6J5Y2A6YGg5LyB5LmL5oiA5aSn5buI5ZGo6YKK55qE6KW_6ZuF5ZyW5qW15ZOB5ZKW5ZWh!3m4!1s0x3442aa3270402e21:0xb3d8b254c8d3b2ca!8m2!3d25.0262079!4d121.5492629"
+                target="_blank">台北市大安區敦化南路二段203號1樓
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+        <td>7:30~21:30(一)~(四)
+            <br>7:30~22:00(五)
+            <br>11:00~21:00(六)~(日)</td>
+    </tr>
+    <tr>
+        <td>明基店</td>
+        <td>(02)-8751-2128</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/Barista+Coffee/@25.0812895,121.5626784,17z/data=!3m1!4b1!4m5!3m4!1s0x3442ab874c043abb:0xca13f61b98c61c47!8m2!3d25.0812895!4d121.5648671"
+                target="_blank">台北市內湖區基湖路18號1樓
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>07:30~17:30(一)~(五)
+            <br>不營業(六)~(日)</td>
+    </tr>
+    <tr>
+        <td>忠孝倍利店</td>
+        <td>(02)-3322-3320</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/100%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E6%AD%A3%E5%8D%80%E5%BF%A0%E5%AD%9D%E6%9D%B1%E8%B7%AF%E4%BA%8C%E6%AE%B593-1%E8%99%9F/@25.0430634,121.5285987,17z/data=!3m1!4b1!4m5!3m4!1s0x3442a97b647ac3bb:0x60feca294a9d695d!8m2!3d25.0430634!4d121.5307874"
+                target="_blank">台北市中正區忠孝東路二段93-1號
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>09:00~21:30(一)~(五)
+            <br>08:30~21:30(六)
+            <br>8:30~22:30(日)</td>
+    </tr>
+
+    <tr>
+        <td>微風廣場店</td>
+        <td>(02)-8772-8060</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/%E5%BE%AE%E9%A2%A8%E5%BB%A3%E5%A0%B4/@25.0435372,121.5330453,15z/data=!4m8!1m2!2m1!1z5b6u6aKo5buj5aC0!3m4!1s0x3442abdb9330b49f:0x355ddfa4d6703235!8m2!3d25.0459484!4d121.5441195"
+                target="_blank">台北市松山區復興南路一段39號2樓
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>11:00~21:30(日)~(三)
+            <br>11:00~22:00(四)~(六)</td>
+    </tr>
+    <tr>
+        <td>內湖禮客二店</td>
+        <td>(02)-2796-6388</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/Barista+Coffee/@25.0642429,121.5725713,17z/data=!4m8!1m2!2m1!1z6KW_6ZuF5ZyWIOWFp-a5luemruWuouW6lw!3m4!1s0x3442ab874c043abb:0xd74575d1f6899481!8m2!3d25.0642429!4d121.57476"
+                target="_blank">台北市內湖區民善街205號
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>11:00~21:30(一)~(四)
+            <br>11:00~22:00(五)
+            <br>10:30~22:00(六)~(日)</td>
+    </tr>
+    <tr>
+        <td>世貿旗艦店</td>
+        <td>(02)-2722-2116</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/110%E5%8F%B0%E5%8C%97%E5%B8%82%E4%BF%A1%E7%BE%A9%E5%8D%80%E4%BF%A1%E7%BE%A9%E8%B7%AF%E4%BA%94%E6%AE%B56%E8%99%9F/@25.0328462,121.5579229,17z/data=!3m1!4b1!4m5!3m4!1s0x3442abb600dd6745:0xb6a5399091374f16!8m2!3d25.0328414!4d121.5601116"
+                target="_blank">台北市信義區信義路五段6號
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>07:00~21:00(一)~(日)</td>
+    </tr>
+    <tr>
+        <td>西湖店</td>
+        <td>01-8751-1015</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/Barista+Coffee/@25.05021,121.5364944,14z/data=!4m8!1m2!2m1!1z6KW_6ZuF5ZyWIOilv-a5lg!3m4!1s0x3442ac6e840fc769:0x84d82256f990dc64!8m2!3d25.0820602!4d121.5659384"
+                target="_blank">台北市內湖區內湖路一段242號1樓
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>07:00~21:00(一)~(日)</td>
+    </tr>
+    <tr>
+        <td>振醫店</td>
+        <td>(02)-2822-7790</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/Barista+Coffee/@25.1183855,121.457145,12z/data=!4m8!1m2!2m1!1z5Y-w5YyX5biC5YyX5oqV5Y2A5oyv6IiI6Yar6Zmi5ZGo6YKK55qE6KW_6ZuF5ZyW5qW15ZOB5ZKW5ZWh!3m4!1s0x3442ae891c2a2193:0x6911c763a7ea80fc!8m2!3d25.1175256!4d121.5224662"
+                target="_blank">台北市北投區振興街45號B1
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>07:00~21:00(一)~(五)
+            <br>08:00~17:00(六)~(日)</td>
+    </tr>
+    <tr>
+        <td>南港中信店</td>
+        <td>(02)-2783-6442</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E5%92%96%E5%95%A1/@25.058986,121.6126354,17z/data=!4m8!1m2!2m1!1z6KW_6ZuF5ZyWIOWNl-a4r-S4reS_oeW6lw!3m4!1s0x3442aca7e101baab:0xde5263c73efd4f0e!8m2!3d25.0595135!4d121.615163"
+                target="_blank">台北市南港區經貿二路186號3樓
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>07:30~21:30(一)~(日)</td>
+    </tr>
+    <tr>
+        <td>仁愛光復店</td>
+        <td>(02)-2741-9729</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E6%A5%B5%E5%93%81%E5%92%96%E5%95%A1+%E4%BB%81%E6%84%9B%E5%85%89%E5%BE%A9%E5%BA%97/@25.0379844,121.55526,17z/data=!3m1!4b1!4m5!3m4!1s0x3442abd2566bccaf:0x5604dff8778ee1a0!8m2!3d25.0379844!4d121.5574487"
+                target="_blank">台北市大安區仁愛路四段449號1F
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>07:00~21:00(一)~(日)</td>
+    </tr>
+    <tr>
+        <td>大直店</td>
+        <td>(02)-2533-2949</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E5%92%96%E5%95%A1/@25.080023,121.5480673,17z/data=!4m13!1m7!3m6!1s0x3442ac0f09ee5341:0x31b11f6126d65211!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljJflronot681NTTlt7c0OeiZnw!3b1!8m2!3d25.080023!4d121.550256!3m4!1s0x3442ac0fa0b941a5:0xecd38c1b38f30a18!8m2!3d25.0801689!4d121.55014"
+                target="_blank">台北市中山區北安路554巷49號1樓
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>07:00~21:00(一)~(日)</td>
+    </tr>
+    <tr>
+        <td>忠孝永春店</td>
+        <td>(02)-2346-1028</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E6%A5%B5%E5%93%81%E5%92%96%E5%95%A1/@25.0371125,121.5426727,14z/data=!4m8!1m2!2m1!1z6KW_6ZuF5ZyWIOW_oOWtneawuOaYpQ!3m4!1s0x3442aba1aec2796f:0x31b4c417a1d78978!8m2!3d25.041439!4d121.579394"
+                target="_blank">台北市信義區忠孝東路五段526號
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>07:00~21:00(一)~(日)</td>
+    </tr>
+    <tr>
+        <td>內湖三總店</td>
+        <td>(02)-2790-7069</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/%E4%B8%89%E8%BB%8D%E7%B7%8F%E5%8C%BB%E9%99%A2%E5%86%85%E6%B9%96%E9%99%A2%E5%8C%BA/@25.0678968,121.58742,15z/data=!4m8!1m2!2m1!1z6KW_6ZuF5ZyWIOWFp-a5luS4iee4vQ!3m4!1s0x3442ac85b9062427:0x91f123e0976ad553!8m2!3d25.0717082!4d121.5922631"
+                target="_blank">台北市內湖區成功路二段325號B1
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>07:00~21:00(一)~(日)</td>
+    </tr>
+    <tr>
+        <td>天母西路店</td>
+        <td>(02)-2874-8051</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E6%A5%B5%E5%93%81%E5%92%96%E5%95%A1/@25.1184678,121.5249963,17z/data=!3m1!4b1!4m5!3m4!1s0x3442ae87befdf8a7:0x8d5fcbe81b34eca8!8m2!3d25.1184678!4d121.527185"
+                target="_blank">台北市士林區天母西路45號一樓
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>07:00~21:00(一)~(日)</td>
+    </tr>
+    <tr>
+        <td>台大醫院店</td>
+        <td>(02)-2322-5907</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/100%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E6%AD%A3%E5%8D%80%E4%B8%AD%E5%B1%B1%E5%8D%97%E8%B7%AF7%E8%99%9F/@25.0402741,121.5169704,17z/data=!3m1!4b1!4m5!3m4!1s0x3442a97438d6743d:0xb8f929882567b92!8m2!3d25.0402741!4d121.5191591"
+                target="_blank">台北市中正區中山南路7號
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>07:00~21:00(一)~(日)</td>
+    </tr>
+    <tr>
+        <td>新店中央店</td>
+        <td>(02)-2219-7918</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E6%A5%B5%E5%93%81%E5%92%96%E5%95%A1/@24.9738939,121.5281978,17z/data=!3m1!4b1!4m5!3m4!1s0x346802192567d97b:0xc220bab9a054d33b!8m2!3d24.9738939!4d121.5303865"
+                target="_blank">新北市新店區中央路131號一樓
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>07:00~21:00(一)~(日)</td>
+    </tr>
+    <tr>
+        <td>頂溪店</td>
+        <td>(02)-2926-2102</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E5%92%96%E5%95%A1(%E9%A0%82%E6%BA%AA%E5%BA%97)/@25.0120826,121.5131714,17z/data=!3m1!4b1!4m5!3m4!1s0x3442a9ea1a3f630d:0xfa93c955400c315b!8m2!3d25.0120826!4d121.5153601"
+                target="_blank">新北市永和區永和路二段116號1樓
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>07:00~21:00(一)~(日)</td>
+    </tr>
+    <tr>
+        <td>中總元化店</td>
+        <td>(03)-4276-175</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/BARISTA+COFFEE/@24.9622949,121.2223855,17z/data=!3m1!4b1!4m5!3m4!1s0x34682236cd501a01:0x93cca389edf99319!8m2!3d24.9622949!4d121.2245742"
+                target="_blank">桃園市中壢區元化路317號
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>07:00~21:00(一)~(日)</td>
+    </tr>
+    <tr>
+        <td>關西服務處</td>
+        <td>(03)-5877-198</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/Barista+Coffee/@24.801103,121.1902543,17z/data=!3m1!4b1!4m5!3m4!1s0x34683ebdbe349031:0x23629cf837156fac!8m2!3d24.801103!4d121.192443"
+                target="_blank">新竹縣關西鎮東安里11鄰上三屯14號
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>07:00~23:00(一)~(日)
+            <br>07:00~24:00(六)~(日)</td>
+    </tr>
+    <tr>
+        <td>清水休息站</td>
+        <td>(04)-2620-2989</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E6%A5%B5%E5%93%81%E5%92%96%E5%95%A1/@24.2812728,120.5991893,17z/data=!3m1!4b1!4m5!3m4!1s0x346913ec14adfdd5:0x5dcfaeffadf51750!8m2!3d24.2812728!4d120.601378"
+                target="_blank">台中市清水區吳厝里吳厝二街89號
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>06:00~24:00(一)~(日)</td>
+    </tr>
+    <tr>
+        <td>台中榮總店</td>
+        <td>(04)-2359-1887</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E6%A5%B5%E5%93%81%E5%92%96%E5%95%A1(%E8%87%BA%E4%B8%AD%E6%A6%AE%E7%B8%BD%E9%96%80%E5%B8%82)/@24.1837584,120.6015179,17z/data=!3m1!4b1!4m5!3m4!1s0x346915f691a17e55:0x14f22072792ddb3d!8m2!3d24.1837584!4d120.6037066"
+                target="_blank">台中市台灣大道四段1650號
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>07:00~18:00(一)~(五)
+            <br>07:00~14:00(六)
+            <br>不營業(日)</td>
+    </tr>
+    <tr>
+        <td>沙鹿店</td>
+        <td>(04)-2658-3765</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E6%A5%B5%E5%93%81%E5%92%96%E5%95%A1(%E6%B2%99%E9%B9%BF%E9%96%80%E5%B8%82)/@24.2472296,120.5406348,17z/data=!3m1!4b1!4m5!3m4!1s0x346914c4d358ad61:0xf543707ec94c9701!8m2!3d24.2472296!4d120.5428235"
+                target="_blank">台中市梧棲區中棲路一段699號
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>07:00~21:00(一)~(五)
+            <br>07:00~16:00(六)~(日)</td>
+    </tr>
+    <tr>
+        <td>新營服務處</td>
+        <td>(06)-632-2091</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/%E6%96%B0%E7%87%9F%E6%9C%8D%E5%8B%99%E5%8D%80(%E5%8D%97%E4%B8%8B)/@23.3405433,120.3104809,17z/data=!4m8!1m2!2m1!1zNzMx5Y-w5Y2X5biC5b6M5aOB5Y2A56u55paw6YeM5paw5Y6dNjnomZ8!3m4!1s0x346e85a68c319229:0x10fad5d73489983d!8m2!3d23.3407342!4d120.3120142"
+                target="_blank">台南市後壁區竹新里新厝69號(新營服務區南下)
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>08:00~20:00(一)~(五)
+            <br>07:00~21:00(六)~(日)</td>
+    </tr>
+    <tr>
+        <td>漢神本館店</td>
+        <td>(07)-215-4355</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/Barista+Coffee/@22.619333,120.2937293,17z/data=!3m1!4b1!4m5!3m4!1s0x346e047fb63db33b:0xf00a579d80dbf8e4!8m2!3d22.619333!4d120.295918"
+                target="_blank">高雄市前金區成功一路266-1號4樓(漢神百貨)
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a></td>
+
+        <td>
+            11:00~22:00(一)~(四)
+            <br> 11:00~22:30(五)
+            <br> 10:30~22:30(六)
+            <br> 10:30~22:00日
+        </td>
+    </tr>
+    <tr>
+        <td>高雄榮總店</td>
+        <td>(07)-345-2849</td>
+        <td>
+            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E6%A5%B5%E5%93%81%E5%92%96%E5%95%A1(%E9%AB%98%E9%9B%84%E6%A6%AE%E7%B8%BD%E5%BA%97)/@22.6779942,120.3204568,17z/data=!4m8!1m2!2m1!1z6KW_6ZuF5ZyWIOmrmOmbhOamrue4vQ!3m4!1s0x346e054052faacd5:0x880842c2c5495666!8m2!3d22.6784515!4d120.3227869"
+                target="_blank">高雄市左營區大中一路368號1樓
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </a>
+        </td>
+
+        <td>07:00~21:00(一)~(日)</td>
+    </tr>
+
+</table>
+<div id="data_for_phone"></div>
+</div>
+<!--forHead.js的container-->
+<script src="js/forFoot.js"></script>
+<script src="js/forJs.js"></script>
+<script>
+    function change_area(area_index) {
+        switch (area_index) {
+            case 1: center = { lat: 25.0375415, lng: 121.5644328 }; break;
+            case 2: center = { lat: 24.1508684, lng: 120.664475 }; break;
+            case 3: center = { lat: 22.6376063, lng: 120.397741 }; break;
+        }
+        zoom = 10;
+        $("#store_sub div").removeClass("sub_for_area");
+        $("#store_sub div").eq(area_index - 1).addClass("sub_for_area");
+        initMap();
+    }
+    var zoom = 5;
+    var center = { lat: 24, lng: 121 };
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: zoom,
+            center: center
+        });
+
+        var labels = ["榮星紅樓店", "台大店", "新遠企店", "明基店", "忠孝倍利店", "BP極品嚴培忠孝延吉店", "內湖禮客店", "微風廣場店",
+            "內湖禮客二店", "世貿旗艦店", "西湖店", "振醫店", "南港中信店", "仁愛光復店", "貝瑞斯塔市集", "大直店", "忠孝永春店", "內湖三總店",
+            "天母西路店", "台大醫院店", "新店中央店", "頂溪店", "中總元化店", "關西服務處", "清水休息站", "台中榮總店", "沙鹿店", "新營服務處",
+            "溪神本館店", "高雄榮總店"];
+
+        var markers = locations.map(function (location, i) {
+            return new google.maps.Marker({
+                position: location,
+                label: labels[i % labels.length]
+            });
+        });
+
+        var markerCluster = new MarkerClusterer(map, markers,
+            { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
+    }
+    var locations = [
+        { lat: 25.0625138, lng: 121.54108150000002 },
+        { lat: 25.018073, lng: 121.533334 },
+        { lat: 25.026200, lng: 121.549531 },
+        { lat: 25.081009, lng: 121.564733 },
+        { lat: 25.043064, lng: 121.530894 },
+        { lat: 25.041194, lng: 121.554460 },
+        { lat: 25.064243, lng: 121.574760 },
+        { lat: 25.045948, lng: 121.544119 },
+        { lat: 25.064345, lng: 121.574703 },
+        { lat: 25.03284, lng: 121.560112 },
+        { lat: 25.082060, lng: 121.5659382 },
+        { lat: 25.117512, lng: 121.522467 },
+        { lat: 25.059970, lng: 121.615264 },
+        { lat: 25.038009, lng: 121.557339 },
+        { lat: 25.038009, lng: 121.557339 },
+        { lat: 25.080169, lng: 121.550140 },
+        { lat: 25.041439, lng: 121.579394 },
+        { lat: 25.071831, lng: 121.589956 },
+        { lat: 25.118598, lng: 121.527122 },
+        { lat: 25.040274, lng: 121.519159 },
+        { lat: 24.973889, lng: 121.530534 },
+        { lat: 25.011994, lng: 121.515149 },
+        { lat: 24.962295, lng: 121.224574 },
+        { lat: 24.801103, lng: 121.192443 },
+        { lat: 24.281224, lng: 120.601371 },
+        { lat: 24.183758, lng: 120.603707 },
+        { lat: 24.247463, lng: 120.542674 },
+        { lat: 23.340734, lng: 120.312014 },
+        { lat: 22.619482, lng: 120.296618 },
+        { lat: 22.677288, lng: 120.321879 },
+    ]
+
+
+    $(window).resize(function () {
+        resize();
+    });
+    function init() {
+        resize();
+    }
+    function resize() {
+        if ($(window).outerWidth() > 500) {
+            $("#data_for_phone").removeClass("for_phone");
+            $("#data_for_phone").hide();
+            $("table").show();
+            $("#start").removeClass("start_form_top");
+            $("#start").addClass("start");
+            $("#store_sub").removeClass("col-12");
+        }
+        else {
+            if (!$("#data_for_phone").hasClass("for_phone")) {
+                $("table").hide();
+                $("#data_for_phone").show();
+                var count_of_data = $("table tbody").children().length;
+                $("#data_for_phone").html("");
+                for (var i = 1; i < count_of_data - 1; i++) {
+                    var this_tr = $("table tbody tr").eq(i);
+                    var td_content = [];
+                    for (var j = 0; j < 3; j++) {
+                        td_content[j] = this_tr.children("td").eq(j).html();
+                    }
+                    $("#data_for_phone").append(
+                        "<div><p class='store_name'>" +
+                        td_content[0] +
+                        "</p><p><img src='images/phone_icon.png' width='13px;'>&nbsp;&nbsp;" +
+                        td_content[1] +
+                        "</p><p><img src='images/address_icon.png' width='13px;'>&nbsp;&nbsp;" +
+                        td_content[2] +
+                        "</p></div><div style='clear:both;'></div>"
+                    );
+                }
+                $("#store_sub").addClass("col-12");
+                $("#start").addClass("start_form_top");
+                $("#start").removeClass("start");
+                $("#data_for_phone").addClass("for_phone");
+            }
+
+        }
+    }
+    init();
+
+
+
+
+
+
+</script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx9eSnetY3O0sqCbFV2K24vkrtJIPiRTo&callback=initMap">
+</script>
+</body>
+
+</html>

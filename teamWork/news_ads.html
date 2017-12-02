@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<script src="js/forHead.js"></script>
+<div class="start_form_top sub" id="news_sub">
+    <div class="text-center" id="food_1">
+        <a href="news_news.html" class="font-weight-bold link">最新消息</a>
+    </div>
+    <div class=" text-center" id="food_2">
+        <a href="news_ads.html" class="font-weight-bold link">電視廣告</a>
+    </div>
+</div>
+<!-- Swiper -->
+<div class="swiper-container gallery-top" id="ads_top_swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <iframe src="https://www.youtube.com/embed/m08drQcsrto" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+        <div class="swiper-slide">
+            <iframe src="https://www.youtube.com/embed/n0L1J1MmHNQ?rel=0" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+        <div class="swiper-slide">
+            <iframe src="https://www.youtube.com/embed/f-30kJN1nng" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+        <div class="swiper-slide">
+            <iframe src="https://www.youtube.com/embed/v2OYRb9yGw0\&t=5s" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+        <div class="swiper-slide">
+            <iframe src="https://www.youtube.com/embed/XeW-LCCDab8" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="swiper-slide">
+            <iframe src="https://www.youtube.com/embed/gJk7HKIUR8k" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="swiper-slide">
+            <iframe src="https://www.youtube.com/embed/qettBHT4Esc" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="swiper-slide">
+            <iframe src="https://www.youtube.com/embed/v28W15Yjg_4" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+</div>
+<div class="swiper-container gallery-thumbs" id="ads_bottom_swiper-container">
+    <div class="swiper-wrapper" id="ads-swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url('images/news/TV_1.jpg')"></div>
+        <div class="swiper-slide" style="background-image:url('images/news/TV_2.jpg')"></div>
+        <div class="swiper-slide" style="background-image:url('images/news/TV_3.jpg')"></div>
+        <div class="swiper-slide" style="background-image:url('images/news/TV_4.jpg')"></div>
+        <div class="swiper-slide" style="background-image:url('images/news/TV_5.jpg')"></div>
+        <div class="swiper-slide" style="background-image:url('images/news/TV_6.jpg')"></div>
+        <div class="swiper-slide" style="background-image:url('images/news/TV_7.jpg')"></div>
+        <div class="swiper-slide" style="background-image:url('images/news/TV_8.jpg')"></div>
+    </div>
+</div>
+</div>
+<!--forHead.js的container-->
+<script src="js/forFoot.js"></script>
+<script src="js/forJs.js"></script>
+<script>
+    $(".container").eq(0).addClass("my_ads_container");
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        touchRatio: 0.2,
+        slideToClickedSlide: true,
+
+    });
+    galleryTop.controller.control = galleryThumbs;
+    galleryThumbs.controller.control = galleryTop;
+
+
+
+    if ($(window).outerWidth() < 500) {
+        $("#news_sub div").eq(1).children().addClass("active");
+    }
+
+    $(window).resize(function () {
+        resize();
+    });
+    function resize() {
+        if ($(window).outerWidth() < 500) {
+
+            $("#news_sub").show();
+            $("#news_sub div").eq(0).children().addClass("active");
+        } else {
+            $("#news_sub").hide();
+        }
+      
+    }
+    function init() {
+        resize();
+    }
+    init();
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+
+</html>
