@@ -4,9 +4,7 @@ document.write("<script src='js/aos.js'></script>");
 document.write("<script src='js/lightbox.min.js'></script>");
 document.write("<script src='js/swiper.min.js'></script>");
 var script_name = document.location.pathname.substr(1);
-
 var index = 0;
-console.log(script_name);
 switch (script_name) {
     case "":
     case "index.html": index = 0; break;
@@ -23,7 +21,6 @@ switch (script_name) {
     case "teamWork/store.html": index = 4; break;
     case "teamWork/family.html": index = 5; break;
 }
-console.log(index);
 if (index !== 0) {
     $("#navbarSupportedContent .nav-link").eq(index - 1).addClass("sub_selected");
     $("#navbarSupportedContent .nav-link").eq(index - 1).removeClass("text-white")
