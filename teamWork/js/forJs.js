@@ -23,6 +23,7 @@ switch (script_name) {
     case "teamWork/store.html": index = 4; break;
     case "teamWork/family.html": index = 5; break;
 }
+console.log(index);
 if (index !== 0) {
     $("#navbarSupportedContent .nav-link").eq(index - 1).addClass("sub_selected");
     $("#navbarSupportedContent .nav-link").eq(index - 1).removeClass("text-white")
