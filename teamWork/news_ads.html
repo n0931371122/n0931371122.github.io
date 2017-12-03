@@ -37,8 +37,8 @@
         </div>
     </div>
     <!-- Add Arrows -->
-    <div class="swiper-button-next swiper-button-white"></div>
-    <div class="swiper-button-prev swiper-button-white"></div>
+    <div class="swiper-button-next swiper-button-white" id="ads_button_next"></div>
+    <div class="swiper-button-prev swiper-button-white"  id="ads_button_prev"></div>
 </div>
 <div class="swiper-container gallery-thumbs" id="ads_bottom_swiper-container">
     <div class="swiper-wrapper" id="ads-swiper-wrapper">
@@ -87,9 +87,7 @@
     });
     function resize() {
         if ($(window).outerWidth() < 500) {
-
             $("#news_sub").show();
-            $("#news_sub div").eq(0).children().addClass("active");
         } else {
             $("#news_sub").hide();
         }

@@ -22,6 +22,7 @@ document.write("</head >");
 document.write("<body>");
 
 document.write("  <a href='index.html'><img  id='logo'  src='images/logo.png' alt=''></a>");
+document.write("  <a href='index.html'><img  id='logo_complete'  src='images/logo_for_phone.png' alt=''></a>");
 
 document.write("  <a href='https://www.facebook.com/baristacoffee.tw' id='fb'></a>");
 document.write("  <div class='container'>");
@@ -32,7 +33,7 @@ document.write(" <span class='menu-global menu-middle'></span>");
 document.write("  <span class='menu-global menu-bottom'></span>");
 document.write("  </div>");
 
-document.write("     <nav class='navbar my_navbar navbar-expand-lg navbar-expand-md fixed-top' id='my_navbar' style='background-color:rgb(150,2,0)'>");
+document.write("     <nav class='navbar my_navbar navbar-expand-lg navbar-expand-md navbar-expand-sm fixed-top' id='my_navbar' style='background-color:rgb(150,2,0)'>");
 document.write("         <div class='container'>");
 document.write("             <div class=\'collapse navbar-collapse\' id=navbarSupportedContent>");
 document.write("                 <ul class='navbar-nav mr-auto' >");

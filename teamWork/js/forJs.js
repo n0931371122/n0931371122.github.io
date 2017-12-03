@@ -27,28 +27,33 @@ if (index !== 0) {
     $("#navbarSupportedContent .nav-link").eq(index - 1).removeClass("text-white")
 }
 function init_logo() {
-    if ($(window).outerWidth() > 1024) {
+    if ($(window).outerWidth() > 1140) {
         x = $("#navbarSupportedContent").position().left;
-        $("#logo").css("left", x - 120);
+        $("#logo").css("left", x - 100);
         $("#logo").css("top", 10);
         $("#logo").show();
     }
+    else if ($(window).outerWidth() > 992 ){
+        x = $("#navbarSupportedContent").position().left;
+        $("#logo").css("left", x - 30);
+        $("#logo").css("top", 10);
+        $("#logo").show();
+    }   
     else if ($(window).outerWidth() >= 768) {
-        $("#navbarSupportedContent ul").css("width", "80%");
         x = $("#navbarSupportedContent").position().left;
         $("#logo").css("left", x - 20);
         $("#logo").css("top", 10);
         $("#logo").show();
     }
-    else if ($(window).outerWidth() > 500) {
-        $("#navbarSupportedContent").css("width", "80%");
+    else if ($(window).outerWidth() > 576) {
         $("#logo").show();
     }
     else {
         $("#logo").css("left", 10);
         $("#logo").css("top", 10);
         $(".ham").show();
-        $("#logo").show();
+        $("#logo").hide();
+        $("#logo_complete").show();
     }
 }
 $(window).resize(function () {
