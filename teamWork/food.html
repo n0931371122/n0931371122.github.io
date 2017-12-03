@@ -79,7 +79,7 @@
             $(".swiper-wrapper").html("");
             for (var i = 1; i <= length; i++) {
                 food_name = i < 10 ? "0" + i : i;
-                element += " <div class='swiper-slide food-swiper-slide'> <a href='/images/food/" + file + "/" + file + food_name + "p.jpg' data-lightbox='image-" + index + "' data-title='" + food_name_array[index][i - 1] + "'><img style='width:100%' src='images/food/" + file + "/" + file + food_name + ".jpg' alt=''></a><p>" + food_name_array[index][i - 1] + "</p><p>" + food_english_name_array[index][i - 1] + "</p></div>";
+                element += " <div class='swiper-slide food-swiper-slide'> <a href='images/food/" + file + "/" + file + food_name + "p.jpg' data-lightbox='image-" + index + "' data-title='" + food_name_array[index][i - 1] + "'><img style='width:100%' src='images/food/" + file + "/" + file + food_name + ".jpg' alt=''></a><p>" + food_name_array[index][i - 1] + "</p><p>" + food_english_name_array[index][i - 1] + "</p></div>";
 
             }
             $(".swiper-wrapper").append(element);
@@ -118,11 +118,12 @@
                     if (i % 2 == 1) {
                         element += "<div class='row'>";
                     }
-                    element += " <div class='col col-6 food'> <a href='/images/food/" + file + "/" + file + food_name + "p.jpg' data-lightbox='image-" + index + "' data-title='" + food_name_array[index][i - 1] + "'><img style='width:100%' src='images/food/" + file + "/" + file + food_name + ".jpg' alt=''></a><p>" + food_name_array[index][i - 1] + "</p><p>" + food_english_name_array[index][i - 1] + "</p></div>";
+                    element += " <div class='col col-6 food'> <a href='images/food/" + file + "/" + file + food_name + "p.jpg' data-lightbox='image-" + index + "' data-title='" + food_name_array[index][i - 1] + "'><img style='width:100%' src='images/food/" + file + "/" + file + food_name + ".jpg' alt=''></a><p>" + food_name_array[index][i - 1] + "</p><p>" + food_english_name_array[index][i - 1] + "</p></div>";
                     if (i % 2 == 0) {
                         element += "</div>";
                     }
                 }
+                /*111111111*/
                 $("#for_phone_food").html("");
                 $("#for_phone_food").append(element);
                 var sub_index = index + 1;
