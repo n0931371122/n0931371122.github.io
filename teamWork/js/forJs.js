@@ -26,9 +26,15 @@ if (index !== 0) {
     $("#navbarSupportedContent .nav-link").eq(index - 1).removeClass("text-white")
 }
 function init_logo() {
-    if ($(window).outerWidth() > 1200) {
+    if ($(window).outerWidth() > 1300) {
         x = $("#navbarSupportedContent").position().left;
         $("#logo").css("left", x - 100);
+        $("#logo").css("top", 10);
+        $("#logo").show();
+    }
+    else if ($(window).outerWidth() > 1200) {
+        x = $("#navbarSupportedContent").position().left;
+        $("#logo").css("left", x - 70);
         $("#logo").css("top", 10);
         $("#logo").show();
     }
