@@ -28,7 +28,7 @@ if (index !== 0) {
 function init_logo() {
     if ($(window).outerWidth() > 1200) {
         x = $("#navbarSupportedContent").position().left;
-        $("#logo").css("left", x - 80);
+        $("#logo").css("left", x - 100);
         $("#logo").css("top", 10);
         $("#logo").show();
     }
