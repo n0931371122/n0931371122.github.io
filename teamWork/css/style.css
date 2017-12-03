@@ -577,7 +577,7 @@ footer div:nth-child(1) p:nth-child(4) {
         padding-bottom:20px;
     }
 }
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1300px) {
     #navbarSupportedContent ul{
         margin:auto;
         width:80%;
