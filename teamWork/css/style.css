@@ -53,7 +53,7 @@ body {
     width:100%;
 }
 #navbarSupportedContent .sub_selected {
-    color: rgb(251, 215, 115);
+    color: rgb(251, 215, 115) !important;
 }
 
 #navbarSupportedContent a:hover {
