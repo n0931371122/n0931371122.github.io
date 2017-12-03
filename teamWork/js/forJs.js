@@ -15,7 +15,7 @@ switch (script_name) {
 
     case "teamWork/aboutus_contact.html":
     case "teamWork/aboutus_intro.html":
-    case "teamWork/aboutus_join.html.html":
+    case "teamWork/aboutus_join.html":
     case "teamWork/aboutus_recruit.html": index = 3; break;
 
     case "teamWork/store.html": index = 4; break;
