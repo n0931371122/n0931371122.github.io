@@ -67,7 +67,7 @@
     }
     var length = food_array[index];
     function resize() {
-        if ($(window).outerWidth() > 500) {   
+        if ($(window).outerWidth() > 576) {   
             $("#food_sub").addClass("row");
             $("#food_sub").show();  
             $("#food_sub").addClass("start");
@@ -123,6 +123,7 @@
                         element += "</div>";
                     }
                 }
+                /*111111111*/
                 $("#for_phone_food").html("");
                 $("#for_phone_food").append(element);
                 var sub_index = index + 1;
@@ -147,7 +148,7 @@
         'resizeDuration': 200,
         'wrapAround': true
     })
-    $("#navbarSupportedContent .nav-link").eq(index).addClass("sub_selected");
+    $("#food_sub .nav-link").eq(index).addClass("sub_selected");
 
 </script>
 </body>

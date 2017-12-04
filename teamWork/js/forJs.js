@@ -4,32 +4,37 @@ document.write("<script src='js/aos.js'></script>");
 document.write("<script src='js/lightbox.min.js'></script>");
 document.write("<script src='js/swiper.min.js'></script>");
 var script_name = document.location.pathname.substr(1);
-
 var index = 0;
 switch (script_name) {
     case "":
     case "index.html": index = 0; break;
-    case "food.html": index = 1; break;
+    case "teamWork/food.html": index = 1; break;
 
-    case "news_news.html":
-    case "news_ads.html": index = 2; break;
+    case "teamWork/news_news.html":
+    case "teamWork/news_ads.html": index = 2; break;
 
-    case "aboutus_contact.html":
-    case "aboutus_intro.html":
-    case "aboutus_join.html.html":
-    case "aboutus_recruit.html": index = 3; break;
+    case "teamWork/aboutus_contact.html":
+    case "teamWork/aboutus_intro.html":
+    case "teamWork/aboutus_join.html":
+    case "teamWork/aboutus_recruit.html": index = 3; break;
 
-    case "store.html": index = 4; break;
-    case "family.html": index = 5; break;
+    case "teamWork/store.html": index = 4; break;
+    case "teamWork/family.html": index = 5; break;
 }
 if (index !== 0) {
     $("#navbarSupportedContent .nav-link").eq(index - 1).addClass("sub_selected");
     $("#navbarSupportedContent .nav-link").eq(index - 1).removeClass("text-white")
 }
 function init_logo() {
-    if ($(window).outerWidth() > 1140) {
+    if ($(window).outerWidth() > 1300) {
         x = $("#navbarSupportedContent").position().left;
         $("#logo").css("left", x - 100);
+        $("#logo").css("top", 10);
+        $("#logo").show();
+    }
+    else if ($(window).outerWidth() > 1200) {
+        x = $("#navbarSupportedContent").position().left;
+        $("#logo").css("left", x - 70);
         $("#logo").css("top", 10);
         $("#logo").show();
     }
