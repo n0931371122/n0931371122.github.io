@@ -33,7 +33,7 @@ p,span{
     left: 0;
   }
   
-  #p2, #p3, #p4, #p5 {
+  #p2, #p3, #p4, #p5,#p6 {
     left: 200%;
     
   }
@@ -43,11 +43,13 @@ p,span{
   #p3 { background: linear-gradient(20deg, #104a72, #5dd19c 75%, #fffae8);}
   #p4 { background: linear-gradient(20deg, #accd3a, #2bc792); }
   #p5 { background:linear-gradient(20deg, #6fe3e7, #4fb8d9 25%, #5648c1);}
-  
+  #p6 { background:linear-gradient(20deg, #6fe3e7, #4fb8d9 25%, #5648c1);}
+
   #t2:target #p2,
   #t3:target #p3,
   #t4:target #p4,
-  #t5:target #p5 {
+  #t5:target #p5,
+  #t6:target #p6  {
     transform: translateX(-200%);
     -webkit-transform: translateX(-200%);
     -moz-transform: translateX(-200%);
@@ -58,19 +60,41 @@ p,span{
   #t2:target #p1, 
   #t3:target #p1,
   #t4:target #p1,
-  #t5:target #p1{
+  #t5:target #p1,
+  #t6:target #p1{
     background: black;
   }
   
   #t2:target #p1 section, 
   #t3:target #p1 section,
   #t4:target #p1 section,
-  #t5:target #p1 section {
+  #t5:target #p1 section,
+  #t6:target #p1 section,{
     -webkit-filter: blur(3px);
   }
-
-
-
+  .owl-stage-outer{
+    height:300px;
+  }
+.owl-prev,.owl-next{
+  box-shadow: 2px 2px 2px rgb(54, 54, 54) !important;
+  font-weight: bold;
+  transition: .1s;
+  margin-top: 5px;
+}
+.owl-prev:hover,.owl-next:hover{
+  transform: scale(0.99);
+  box-shadow: 1px 1px 1px rgb(41, 41, 41) !important;
+  background-color: white !important;
+  color:black !important;
+}
+.item {
+  box-shadow: 2px 2px 2px rgb(43, 23, 23) !important;
+  transition: .3s;
+}
+.item:hover{
+  transform: scale(0.99);
+  box-shadow: 1px 1px 1px rgb(43, 23, 23) !important;
+}
   #menu a li{
     transition: 0.3s ease;
     color: #ffffff;
@@ -106,11 +130,12 @@ p,span{
   }
 
 
-  #t1:target #uno,
-  #t2:target #dos1,
-  #t3:target #dos2,
-  #t4:target #tres,
-  #t5:target #cuatro {
+  #t1:target #s1,
+  #t2:target #s2,
+  #t3:target #s3,
+  #t4:target #s4,
+  #t5:target #s5,
+  #t6:target #s6 {
     border-left: 4px solid #ffffff;
     border-right: 4px solid #ffffff;
     padding: 20px 0; 
@@ -161,12 +186,12 @@ p,span{
     text-align: center;
      line-height: 1.7;
   }
-  #p2 section{
+  #p2 section,#p4 section{
     width:60%;
   }
   .owl-theme .owl-nav [class*=owl-]{
     margin:50px;
-    padding:22px 35px ;
+    padding:10px 35px ;
     color:black;
     font-size:21px;
     font-weight:bold;
@@ -212,21 +237,21 @@ p,span{
     margin-top:190px ;
     display: block;
   }
-#p4 section{
+#p5 section{
   max-width:800px;
   width:80%;
 }
-#p4 li,#p4 h3{
+#p5 li,#p5 h3{
   text-shadow: black 0.1em 0.1em 0.2em
 }
-#p4 ul{
+#p5 ul{
   margin:0px;
   padding:0px;
 }
-#p4 li{
+#p5 li{
   list-style: none;
 }
-#p4 div{
+#p5 div{
   width:33.33%;
   float:left;
 }
