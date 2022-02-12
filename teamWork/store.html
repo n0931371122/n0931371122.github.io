@@ -1,497 +1,389 @@
-<!DOCTYPE html>
-<script src="js/forHead.js"></script>
-<div id="start" class="row start ">
-    <div class="col " id="store_sub">
+<!doctype html>
+<html lang="zh">
 
-        <div class="text-center font-weight-bold " onclick="change_area(1)">北部地區</div>
-        <div class="text-center font-weight-bold " onclick="change_area(2)">中部地區</div>
-        <div class="text-center font-weight-bold " onclick="change_area(3)">南部地區</div>
-    </div>
-    <div id="map" class=" col">
-    </div>
-</div>
-<div style="clear:both;"></div>
-<table>
-    <tr>
-        <th>門市</th>
-        <th>電話</th>
-        <th>地址</th>
-        <th>營業時間</th>
-    </tr>
-    <tr>
-        <td>榮星紅樓店</td>
-        <td>(02)2504-6005</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/Barista+coffee+shop-Star+Red+House/@25.0626069,121.5388515,17z/data=!3m1!4b1!4m5!3m4!1s0x3442abe33f193daf:0x1b907e94a27aa35f!8m2!3d25.0626069!4d121.5410402"
-                target="_blank">台北市中山區民權東路三段3號
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
-        <td>07:00~22:30 (一)~(日)</td>
-    </tr>
-    <tr>
-        <td>台大店</td>
-        <td>(02)2364-4922</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E6%A5%B5%E5%93%81%E5%92%96%E5%95%A1+%E5%8F%B0%E5%A4%A7%E5%BA%97/@25.0183619,121.5312272,17z/data=!3m1!4b1!4m5!3m4!1s0x3442a98964bd2ae3:0x67752c2e22e9444!8m2!3d25.0183619!4d121.5334159"
-                target="_blank">台北市大安區新生南路三段88號
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
-        <td>07:10~22:00(日)~(四)
-            <br>07:10~22:30(五)~(六)</td>
-    </tr>
-    <tr>
-        <td>新遠企店</td>
-        <td>(02)2739-7775</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E6%A5%B5%E5%93%81%E5%92%96%E5%95%A1%E6%96%B0%E9%81%A0%E4%BC%81%E9%96%80%E5%B8%82/@25.0261992,121.5407764,15z/data=!4m8!1m2!2m1!1z5Y-w5YyX5biC5aSn5a6J5Y2A6YGg5LyB5LmL5oiA5aSn5buI5ZGo6YKK55qE6KW_6ZuF5ZyW5qW15ZOB5ZKW5ZWh!3m4!1s0x3442aa3270402e21:0xb3d8b254c8d3b2ca!8m2!3d25.0262079!4d121.5492629"
-                target="_blank">台北市大安區敦化南路二段203號1樓
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
-        <td>7:30~21:30(一)~(四)
-            <br>7:30~22:00(五)
-            <br>11:00~21:00(六)~(日)</td>
-    </tr>
-    <tr>
-        <td>明基店</td>
-        <td>(02)-8751-2128</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/Barista+Coffee/@25.0812895,121.5626784,17z/data=!3m1!4b1!4m5!3m4!1s0x3442ab874c043abb:0xca13f61b98c61c47!8m2!3d25.0812895!4d121.5648671"
-                target="_blank">台北市內湖區基湖路18號1樓
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
+<head>
+<!-- Title and Meta
+================================================== -->
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>t003</title>
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
 
-        <td>07:30~17:30(一)~(五)
-            <br>不營業(六)~(日)</td>
-    </tr>
-    <tr>
-        <td>忠孝倍利店</td>
-        <td>(02)-3322-3320</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/100%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E6%AD%A3%E5%8D%80%E5%BF%A0%E5%AD%9D%E6%9D%B1%E8%B7%AF%E4%BA%8C%E6%AE%B593-1%E8%99%9F/@25.0430634,121.5285987,17z/data=!3m1!4b1!4m5!3m4!1s0x3442a97b647ac3bb:0x60feca294a9d695d!8m2!3d25.0430634!4d121.5307874"
-                target="_blank">台北市中正區忠孝東路二段93-1號
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
+<!-- Facebook Open Graph Meta
+================================================== -->
+<meta property="og:title" content="" />
+<meta property="og:url" content="" />
+<meta property="og:site_name" content="" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" type="image/x-icon" href="styles/images/web-icon.ico" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Pinyon+Script&family=Cormorant+Infant:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+SC:wght@600&family=Noto+Serif+TC:wght@300;400;500;600&family=WindSong&display=swap" rel="stylesheet">
 
-        <td>09:00~21:30(一)~(五)
-            <br>08:30~21:30(六)
-            <br>8:30~22:30(日)</td>
-    </tr>
+<link rel="stylesheet" type="text/css" href="./styles/scss/plugins/aos.css" />
+<link rel="stylesheet" type="text/css" href="./styles/style.css" />
 
-    <tr>
-        <td>微風廣場店</td>
-        <td>(02)-8772-8060</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/%E5%BE%AE%E9%A2%A8%E5%BB%A3%E5%A0%B4/@25.0435372,121.5330453,15z/data=!4m8!1m2!2m1!1z5b6u6aKo5buj5aC0!3m4!1s0x3442abdb9330b49f:0x355ddfa4d6703235!8m2!3d25.0459484!4d121.5441195"
-                target="_blank">台北市松山區復興南路一段39號2樓
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
+</head>
 
-        <td>11:00~21:30(日)~(三)
-            <br>11:00~22:00(四)~(六)</td>
-    </tr>
-    <tr>
-        <td>內湖禮客二店</td>
-        <td>(02)-2796-6388</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/Barista+Coffee/@25.0642429,121.5725713,17z/data=!4m8!1m2!2m1!1z6KW_6ZuF5ZyWIOWFp-a5luemruWuouW6lw!3m4!1s0x3442ab874c043abb:0xd74575d1f6899481!8m2!3d25.0642429!4d121.57476"
-                target="_blank">台北市內湖區民善街205號
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
+<body>
+<header class="position-fixed w-100 z-3">
+	<div class="mask" onClick="$('html').removeClass('menuOpen searchOpen')"></div>
+	<div class="h-100 blank px-md-4">
+		<div class="d-flex justify-content-between align-items-center max1700 h-100 mx-auto">
+			<div class="d-flex align-items-center pe-5 me-5">
+				<button onClick="$('html').addClass('menuOpen')" type="button" class="menu-toggle d-flex align-items-center cursor">
+					<span class="toggle d-block position-relative">
+						<span class="bar d-block"></span>
+						<span class="bar d-block"></span>
+					</span>
+					<span class="d-none d-md-block fw-bold les2 ps-3 ms-1">MENU</span>
+				</button>
+				<div class="search text-hover-red ps-md-4 ms-3 ms-md-2 pe-md-3 pt-1">
+					<button type="button" onClick="$('html').addClass('searchOpen')">
+						<i class="icon-search"></i>
+					</button>
+				</div>
+			</div>
+			<a class="logo-wrapper d-block absolute-center" href="./">
+				<span class="logo position-relative d-table mx-auto">
+					<img src="styles/images/common/logo-white.svg" alt="">
+					<img class="absolute-center" src="styles/images/common/logo-red.svg" alt="">
+				</span>
+				<img class="slogan d-none d-md-block position-absolute" src="styles/images/common/logo-slogan.svg" alt="">
+			</a>
+			<div class="d-flex align-items-center">
+				<a class="contact fw-bold" href="./contact">
+					<i class="icon-mail d-md-none"></i>
+					<span class="d-none d-md-block">CONTACT</span>
+				</a>
+				<div class="d-none d-md-flex ps-3 ps-lg-4">
+					<a class="flex-center text-hover-red mx-1 mx-lg-2" href="#" target="_blank">
+						<i class="icon-fb"></i>
+					</a>
+					<a class="flex-center text-hover-red mx-1 mx-lg-2" href="#" target="_blank">
+						<i class="icon-ig"></i>
+					</a>
+					<a class="flex-center text-hover-red ms-1 ms-lg-2" href="#" target="_blank">
+						<i class="icon-line"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="menu-section bg-white position-fixed z-1 pe-md-5">
+		<button onClick="$('html').removeClass('menuOpen')" class="close d-flex align-items-center text-black mb-4 mb-xl-0" type="button">
+			<i class="icon-close me-1 me-md-3"></i>
+			<span class="fw-bold les1 ps-1">CLOSE</span>
+		</button>
+		<div class="scrollbarY">
+			<div class="d-flex">
+				<div class="number-block d-none d-xl-block">
+					<div class="text-center text-black">
+						<span class="writing-vertical Jost fw-500 h-100">
+							<span class="now py-2">1</span>
+							<span class="py-2">5</span>
+						</span>
+					</div>
+				</div>
+				<ul class="menu ns position-relative text-uppercase ps-2">
+					<li>
+						<a class="d-block d-md-flex align-items-end" href="./news">
+							<span class="ch d-block NotoSerifTC order-md-2 mb-2 mb-md-1">最新消息</span>
+							<span class="en news d-block fz-60 lh-09 me-md-2 mb-1 mb-md-0">
+								<span class="tlt_menu">Hot</span>
+								<span class="tlt_menu">News</span>
+							</span>
 
-        <td>11:00~21:30(一)~(四)
-            <br>11:00~22:00(五)
-            <br>10:30~22:00(六)~(日)</td>
-    </tr>
-    <tr>
-        <td>世貿旗艦店</td>
-        <td>(02)-2722-2116</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/110%E5%8F%B0%E5%8C%97%E5%B8%82%E4%BF%A1%E7%BE%A9%E5%8D%80%E4%BF%A1%E7%BE%A9%E8%B7%AF%E4%BA%94%E6%AE%B56%E8%99%9F/@25.0328462,121.5579229,17z/data=!3m1!4b1!4m5!3m4!1s0x3442abb600dd6745:0xb6a5399091374f16!8m2!3d25.0328414!4d121.5601116"
-                target="_blank">台北市信義區信義路五段6號
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
+						</a>
+					</li>
+					<li>
+						<a class="d-block d-md-flex align-items-end" href="./about">
+							<span class="ch d-block NotoSerifTC order-md-2 mb-2 mb-md-1">關於潤居</span>
+							<span class="en about d-block fz-60 lh-09 me-md-2 mb-1 mb-md-0">
+								<span class="tlt_menu">About</span>
+								<span class="tlt_menu">Zoku</span>
+								<span class="tlt_menu">Sumi</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="d-block d-md-flex align-items-end" href="./cases">
+							<span class="ch d-block NotoSerifTC order-md-2 mb-2 mb-md-1">服務案例</span>
+							<span class="en projects d-block fz-60 lh-09 me-md-2 mb-1 mb-md-0">
+								<span class="tlt_menu">Projects</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="d-block d-md-flex align-items-end" href="./services">
+							<span class="ch d-block NotoSerifTC order-md-2 mb-2 mb-md-1">服務項目</span>
+							<span class="en services d-block fz-60 lh-09 me-md-2 mb-1 mb-md-0">
+								<span class="tlt_menu">Service</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="d-block d-md-flex align-items-end" href="./contact">
+							<span class="ch d-block NotoSerifTC order-md-2 mb-2 mb-md-1">聯絡我們</span>
+							<span class="en contact-span d-block fz-60 lh-09 me-md-2 mb-1 mb-md-0">
+								<span class="tlt_menu">Contact</span>
+								<span class="tlt_menu">Us</span>
+							</span>
 
-        <td>07:00~21:00(一)~(日)</td>
-    </tr>
-    <tr>
-        <td>西湖店</td>
-        <td>01-8751-1015</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/Barista+Coffee/@25.05021,121.5364944,14z/data=!4m8!1m2!2m1!1z6KW_6ZuF5ZyWIOilv-a5lg!3m4!1s0x3442ac6e840fc769:0x84d82256f990dc64!8m2!3d25.0820602!4d121.5659384"
-                target="_blank">台北市內湖區內湖路一段242號1樓
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="pb-5 pb-md-0">
+			<div class="society d-flex mt-xl-5 pt-4 pt-md-5 ps-xl-4 ms-xl-1 pb-4 mb-3">
+				<a class="flex-center rounded-circle" href="#" target="_blank">
+					<i class="icon-fb"></i>
+				</a>
+				<a class="flex-center rounded-circle" href="#" target="_blank">
+					<i class="icon-ig"></i>
+				</a>
+				<a class="flex-center rounded-circle" href="#" target="_blank">
+					<i class="icon-line"></i>
+				</a>
+			</div>
+			<a href="#" target="_blank" class="recruit-link-mobile d-flex d-md-none justify-content-between align-items-center bg-red text-white ps-5 pe-4">
+				<span class="fw-500">人力招募</span>
+				<img class="d-table ms-2 ps-1" src="styles/images/common/plus.png" alt="">
+			</a>
+		</div>
+	</div>
+	<div class="search-section  bg-white position-absolute z-1">
+		<button onClick="$('html').removeClass('searchOpen')" class="close d-flex align-items-center text-black mb-4 mb-xl-0" type="button">
+			<i class="icon-close me-1 me-md-3"></i>
+			<span class="fw-bold les1 ps-1">CLOSE</span>
+		</button>
+		<div class="wrapper text-center w-100 max580">
+			<span class="title d-block fz-48 fw-500 text-black les2 lh-1 mb-2">SEARCH PROJECTS</span>
+			<span class="sub d-block position-relative fz-22 fw-600 text-black les2 pb-3 mb-3">案例搜尋</span>
+			<p class="descript NotoSansTC pt-1 pb-3">請於下方的搜尋欄輸入欲查詢的關鍵字</p>
+			<form action="./result" class=" d-flex bg-grayF7 text-black px-4 py-3">
+				<input class="flex-grow-1 w-0 NotoSansTC text-black" type="text" placeholder="請輸入關鍵字">
+				<button class="text-hover-red" type="submit">
+					<i class="icon-search"></i>
+				</button>
+			</form>
+		</div>
+	</div>
+</header>
+    <!-- main ======================================================================================= -->
+    <main>
+        <div id="about" class="overflow-hidden">
+            <h1 class="d-none">關於潤居</h1>
+            <div class="banner-section">
+                <div class="jqimgFill position-fixed">
+                    <img src="styles/images/about/banner.jpg" alt="">
+                </div>
+                <div class="fw-600 text-white absolute-center text-center w-100 px-4 pb-5">
+                    <span class="tlt d-block fz-160 les5 lh-09">ABOUT</span>
+                    <span class="d-block NotoSerifTC fz-24 les2" data-aos="fade-up" data-aos-delay="100">關於潤居</span>
+                </div>
+                <button class="mouse position-absolute" type="button">
+                    <img src="styles/images/common/mouse.svg" alt="">
+                </button>
+            </div>
+            <div class="position-relative bg-white">
+                <div class="section-1 position-relative z-1 px-sm-4">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-lg-6 order-lg-2 px-4 px-sm-0">
+                            <img class="img ms-xxl-5 ps-lg-4" src="styles/images/about/1.jpg" alt="" data-aos="fade-left">
+                            <div class="d-none d-xl-block pt-5 mt-xl-3">
+                                <span class="dec position-relative d-block NotoSerifTC fz-32 fw-600 text-black les3 mb-1 py-1" data-aos="fade-left">潤澤築，續心居</span>
+                                <p class="fz-20 les2 lh-16" data-aos="fade-left" data-aos-delay="50">
+                                    <span class="d-block">用心灌溉這片土地上的每個「住み」，</span>
+                                    <span class="d-block">帶您「続」寫家茁壯綻放的美好故事。</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-xl-flex justify-content-end ps-4 ps-sm-0 pe-2 pe-sm-0 pe-lg-4 pe-xxl-5 pb-lg-5 mb-lg-5">
+                            <h2 class="text-uppercase fz-90 fw-500 text-black lh-1 les5 pb-2 pb-lg-3 mt-2 mt-md-0 pt-4 pt-md-5 pt-lg-0">
+                                <span class="tlt_2 d-block" data-aos="fade-up">Everything</span>
+                                <span class="tlt_2 d-block" data-aos="fade-up" data-aos-delay="50">Starts From</span>
+                                <span class="tlt_2 d-block" data-aos="fade-up" data-aos-delay="100">the Heart</span>
+                            </h2>
+                            <div class="text position-relative d-block d-xl-none mt-4 mt-md-5">
+                                <span class="dec position-relative d-block NotoSerifTC fz-32 fw-600 text-black les3 mb-1 py-xl-1">潤澤築，續心居</span>
+                                <p class="fz-20 NotoSansTC les2 lh-16">
+                                    <span class="d-block">用心灌溉這片土地上的每個「住み」，</span>
+                                    <span class="d-block">帶您「続」寫家茁壯綻放的美好故事。</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="concept position-absolute" src="styles/images/about/concept.png" alt="" data-aos="fade-In">
+                </div>
+                <div class="section-2 position-relative z-1 pt-4 pt-md-5 pt-xl-0 px-4 px-lg-0">
+                    <div class="row g-0 align-items-xl-end mt-2 mt-md-0">
+                        <div class="col-lg-6">
+                            <img class="object-fit" src="styles/images/about/2.jpg" alt="" data-aos="fade-right">
+                        </div>
+                        <div class="text-inner order-lg-2 col-lg-6 ps-lg-4 ps-xxl-5 pt-4 pt-md-5 pt-lg-0 pb-xxl-4">
+                            <div class="max550 mx-auto">
+                                <span class="d-block fz-22 fw-500 text-red text-uppercase mb-sm-2" data-aos="fade-up">What we do</span>
+                                <h3 class="NotoSerifTC fz-42 fw-600 text-black lh-135 mb-3 mb-md-4 mb-xl-5 pb-xl-2">
+                                    <span class="tlt_2 d-sm-block" data-aos="fade-up">建好房子是能力，築好心田</span>
+                                    <span class="tlt_2 d-sm-block" data-aos="fade-up">才是本事！</span>
+                                </h3>
+                                <div class="lh-17">
+                                    <p class="mb-xl-4 pb-1 pb-md-0 pb-xl-1" data-aos="fade-up">「続の住み」是潤居的初衷、更是展望，崇瑋建設總裁潘谷聲回顧從事建築業的經年留影，從一塊土地、一樁鋼筋，到一幢樓、一個家，我們希望提供的不只是「遮風避雨的殼」，更是能透過每一次難得的相遇，將建築做到與自然和諧共生、以服務達成與人和樂共處的「美好循環」。</p>
+                                    <p class="mb-xl-4 pb-1 pb-md-0 pb-xl-1" data-aos="fade-up">「続ZOKU」整合土地評估、產品規劃、建設營造、企劃銷售等多方資源，因應不同城市、土地、企業的特質與需求，提供專業且創新的完善建議；「住みSUMI」家是收藏生活的容器，在協助每個家庭找尋理想居所的同時，我們也將拓展室內設計、物業管理、房產仲介等多元售後服務，提供給消費者更便利且安心的購買體驗。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-3 pt-4 pt-md-5 pb-1 mt-md-5 mt-lg-0 mt-xl-5">
+                    <div class="ps-md-5 pt-xl-4">
+                        <div class="max1700 ms-auto">
+                            <h2 class="fz-90 fw-500 text-black text-uppercase position-relative z-1 lh-1 les3 ps-4 ps-md-5 ms-md-1">
+                                <span class="tlt_2 d-block" data-aos="fade-up">meet our</span>
+                                <span class="tlt_2 d-block" data-aos="fade-up">Leadership</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="content-block">
+                        <div class="ps-lg-4 ps-xl-5">
+                            <div class="position-relative max1700 ms-auto">
+                                <img class="object-fit" src="styles/images/about/3.jpg" alt="" data-aos="fade-left">
+                                <div class="text-inner position-lg-absolute max580 pt-4 pt-md-5 pt-lg-3 px-4 px-lg-0">
+                                    <h3 class="NotoSerifTC fz-42 fw-600 lh-14 les1 mt-2 mt-md-0 mb-md-4 pb-2">
+                                        <span class="d-block" data-aos="fade-up">沒有最好只有更好</span>
+                                        <span class="d-block" data-aos="fade-up" data-aos-delay="50">奏建築的「<span class="NotoSerifSC fw-600">続</span>」曲</span>
+                                    </h3>
+                                    <div class="scrollbarY NotoSansTC lh-17" data-aos="fade-up">
+                                        <p class="mb-0">進入建築業多年以來，潛心於都市更新重建，深耕營建本業，與政府攜手協助改善各城市居住環境；「『続ZOKU』是一個優質企業文化的發展基石，更是我創立潤居、期許自己能讓建築變得更有意義的新使命！」潘谷聲表示。就建築業而言「永遠不要滿足於現狀」，除了堅守對品質的高度要求外，如何將建築做到與自然和諧共生，以人類的健康舒適為基礎，從環保、節能、永續三大原則出發，因應每塊土地不同的屬性與位置條件，發展出最合適且友善環境的設計規劃，更是我們該以身作則去守護的「建築業的良心」；對消費者而言，「我們賣的不只是房子，而是更美好的生活」，在提供好產品的同時，更著手努力用好的服務，繼續陪伴每一個相信並且選擇潤居的家庭，讓幸福成長茁壯。</p>
+                                    </div>
+                                    <span class="d-flex align-items-center justify-content-end pt-3 pt-md-4 pb-2 pb-md-0">
+                                        <span class="les1 NotoSansTC me-3 me-md-4" data-aos="fade-up">崇偉建設總裁</span>
+                                        <picture class="signture signture-1" data-aos="fade-up">
+                                            <source media="(min-width: 992px)" srcset="styles/images/about/signture-1.svg" />
+                                            <source media="(max-width: 991px)" srcset="styles/images/about/signture-1-black.svg" />
+                                            <img src="#" alt="" />
+                                        </picture>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pe-lg-4 pe-xl-5">
+                            <div class="position-relative max1700 me-auto">
+                                <img class="object-fit" src="styles/images/about/4.jpg" alt="" data-aos="fade-right">
+                                <div class="text-inner position-lg-absolute max580 pt-4 pt-md-5 pt-lg-3 px-4 px-lg-0">
+                                    <h3 class="NotoSerifTC fz-42 fw-600 lh-14 les1 mt-2 mt-md-0 mb-md-4 pb-2">
+                                        <span class="d-block" data-aos="fade-up">讓專業成為您的好朋友</span>
+                                        <span class="d-block" data-aos="fade-up" data-aos-delay="50">潤居「住み」新革命</span>
+                                    </h3>
+                                    <div class="scrollbarY NotoSansTC lh-17" data-aos="fade-up">
+                                        <p class="mb-0">「一個精準的定位，往往決定成功的一半！」從事商辦買賣30年，站在市場最前線，仔細傾聽、掌握顧客的需求與痛點，將所有知識和經驗內化淬鍊，潤居顧問團隊將成為您最專業的好朋友；從土地開發、建築設計，到企劃行銷、售後服務，「安心是我們從一而終的堅持」，當地產買賣不再是難以涉足的高深領域，潤居將一直走在最前面，為您掌握最新市場動態、深入剖析消費者、精準定位客層和產品、擬定銷售計畫、策略執行，敬邀各方有志一同的合作夥伴加入，與我們一起展開更理想且完善的「住み」新革命。</p>
+                                    </div>
+                                    <span class="d-flex align-items-center justify-content-end pt-3 pt-md-4 pb-2 pb-md-0">
+                                        <span class="les1 NotoSansTC me-3 me-md-4" data-aos="fade-up">潤居總經理 廠辦推手</span>
+                                        <picture class="signture signture-2" data-aos="fade-up">
+                                            <source media="(min-width: 992px)" srcset="styles/images/about/signture-2.svg" />
+                                            <source media="(max-width: 991px)" srcset="styles/images/about/signture-2-black.svg" />
+                                            <img src="#" alt="" />
+                                        </picture>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main ======================================================================================= -->
+ <a href="#" target="_blank" class="recruit-link d-none d-md-flex position-fixed flex-center text-white z-2">
+     <span class="d-block">
+         <span class="writing-vertical d-block fw-500 les5">人力招募</span>
+         <img class="d-table ms-2 ps-1 mt-2" src="styles/images/common/plus.png" alt="">
+     </span>
+ </a>
+ <footer class="position-relative Jost fz-16 text-white text-center z-1 pt-4">
+     <div class="max1520 mx-auto pt-2 mt-1">
+         <div class="d-table mx-auto pt-3 py-md-5">
+             <div class="logo-wrapper d-table mx-auto mb-4 mb-md-5 pb-1 pb-md-0">
+                 <img class="logo d-table mx-auto mb-2 mb-md-3" src="styles/images/common/logo-white.svg" alt="">
+                 <img src="styles/images/common/logo-slogan.svg" alt="">
+             </div>
+             <ul class="ns menu row g-0 justify-content-center NotoSerifTC fz-20 fw-600 les1 mb-4 mb-md-5 mx-auto">
+                 <li class="col-4 col-md">
+                     <a href="./news" class="d-block">最新消息</a>
+                 </li>
+                 <li class="col-4 col-md">
+                     <a href="./about" class="d-block">關於潤居</a>
+                 </li>
+                 <li class="col-4 col-md">
+                     <a href="./cases" class="d-block">服務案例</a>
+                 </li>
+                 <li class="col-4 col-md">
+                     <a href="./services" class="d-block">服務項目</a>
+                 </li>
+                 <li class="col-4 col-md">
+                     <a href="./contact" class="d-block">聯絡我們</a>
+                 </li>
+             </ul>
+             <span class="d-block NotoSerifTC fz-22 fw-bold les1 mb-2 pb-1">潤居實業股份有限公司</span>
+             <div class="info mb-4 mb-md-0">
+                 <a class="d-table mx-auto" href="https://goo.gl/maps/JqFACPY7WsgJ7cvZ7" target="_blank">114066 台北市內湖區堤頂大道一段1號1樓</a>
+                 <span class="d-block">
+                     電話<span class="NotoSansTC">：</span><a href="tel:+886-2-27955801">02 - 27955801</a><span class="NotoSansTC mx-2">/</span><span>傳真<span class="NotoSansTC">：</span>02 - 27955363</span>
+                 </span>
+                 <a class="d-table mx-auto" href="mailto:runju909@gmail.com" target="_blank">信箱<span class="NotoSansTC">：</span>runju909@gmail.com</a>
+             </div>
+         </div>
+         <button onclick='$("html, body").scrollTop(0)' class="gotop position-md-absolute d-table flex-center mx-auto" type="button">
+             <i class="icon-gotop"></i>
+         </button>
+         <div class="copyright-section py-4">
+             <div class="society d-flex justify-content-center lh-1 mx-auto mb-4 mb-md-3 mt-1 mt-md-2 pb-1">
+                 <a class="flex-center bg-white rounded-circle" href="#" target="_blank">
+                     <i class="icon-fb"></i>
+                 </a>
+                 <a class="flex-center bg-white rounded-circle" href="#" target="_blank">
+                     <i class="icon-ig"></i>
+                 </a>
+                 <a class="flex-center bg-white rounded-circle" href="#" target="_blank">
+                     <i class="icon-line"></i>
+                 </a>
+             </div>
+             <p class="mb-4">
+                 <span class="d-block d-md-inline text-uppercase fz-15 me-md-2 mb-2 mb-md-0">Copyright © Zoku Sumi Co., Ltd. </span>
+                 <a href="./privacy">隱私權政策</a><a href="/sitemap">網站地圖</a>
+             </p>
+         </div>
+     </div>
+ </footer>
+<script src="./scripts/default/jquery.min.js"></script>
+<script src="./scripts/plugins/bootstrap.bundle.min.js"></script>
+<script src="./scripts/plugins/bootstrap-select.min.js"></script>
+<script src="https://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+<script src="./scripts/plugins/imgLiquid.js"></script>
+<script src="./scripts/plugins/aos.js"></script>
+<script src="./scripts/plugins/mCustomScrollbar.js"></script>
+<script src="./scripts/plugins/sweetalert2.min.js"></script>
+<script src="./scripts/plugins/swiper-bundle.min.js"></script>
 
-        <td>07:00~21:00(一)~(日)</td>
-    </tr>
-    <tr>
-        <td>振醫店</td>
-        <td>(02)-2822-7790</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/Barista+Coffee/@25.1183855,121.457145,12z/data=!4m8!1m2!2m1!1z5Y-w5YyX5biC5YyX5oqV5Y2A5oyv6IiI6Yar6Zmi5ZGo6YKK55qE6KW_6ZuF5ZyW5qW15ZOB5ZKW5ZWh!3m4!1s0x3442ae891c2a2193:0x6911c763a7ea80fc!8m2!3d25.1175256!4d121.5224662"
-                target="_blank">台北市北投區振興街45號B1
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
+<script src="./scripts/plugins/textillate/fittext.js"></script>
+<script src="./scripts/plugins/textillate/lettering.js"></script>
+<script src="./scripts/plugins/textillate/textillate.js"></script>
 
-        <td>07:00~21:00(一)~(五)
-            <br>08:00~17:00(六)~(日)</td>
-    </tr>
-    <tr>
-        <td>南港中信店</td>
-        <td>(02)-2783-6442</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E5%92%96%E5%95%A1/@25.058986,121.6126354,17z/data=!4m8!1m2!2m1!1z6KW_6ZuF5ZyWIOWNl-a4r-S4reS_oeW6lw!3m4!1s0x3442aca7e101baab:0xde5263c73efd4f0e!8m2!3d25.0595135!4d121.615163"
-                target="_blank">台北市南港區經貿二路186號3樓
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
-
-        <td>07:30~21:30(一)~(日)</td>
-    </tr>
-    <tr>
-        <td>仁愛光復店</td>
-        <td>(02)-2741-9729</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E6%A5%B5%E5%93%81%E5%92%96%E5%95%A1+%E4%BB%81%E6%84%9B%E5%85%89%E5%BE%A9%E5%BA%97/@25.0379844,121.55526,17z/data=!3m1!4b1!4m5!3m4!1s0x3442abd2566bccaf:0x5604dff8778ee1a0!8m2!3d25.0379844!4d121.5574487"
-                target="_blank">台北市大安區仁愛路四段449號1F
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
-
-        <td>07:00~21:00(一)~(日)</td>
-    </tr>
-    <tr>
-        <td>大直店</td>
-        <td>(02)-2533-2949</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E5%92%96%E5%95%A1/@25.080023,121.5480673,17z/data=!4m13!1m7!3m6!1s0x3442ac0f09ee5341:0x31b11f6126d65211!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljJflronot681NTTlt7c0OeiZnw!3b1!8m2!3d25.080023!4d121.550256!3m4!1s0x3442ac0fa0b941a5:0xecd38c1b38f30a18!8m2!3d25.0801689!4d121.55014"
-                target="_blank">台北市中山區北安路554巷49號1樓
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
-
-        <td>07:00~21:00(一)~(日)</td>
-    </tr>
-    <tr>
-        <td>忠孝永春店</td>
-        <td>(02)-2346-1028</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E6%A5%B5%E5%93%81%E5%92%96%E5%95%A1/@25.0371125,121.5426727,14z/data=!4m8!1m2!2m1!1z6KW_6ZuF5ZyWIOW_oOWtneawuOaYpQ!3m4!1s0x3442aba1aec2796f:0x31b4c417a1d78978!8m2!3d25.041439!4d121.579394"
-                target="_blank">台北市信義區忠孝東路五段526號
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
-
-        <td>07:00~21:00(一)~(日)</td>
-    </tr>
-    <tr>
-        <td>內湖三總店</td>
-        <td>(02)-2790-7069</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/%E4%B8%89%E8%BB%8D%E7%B7%8F%E5%8C%BB%E9%99%A2%E5%86%85%E6%B9%96%E9%99%A2%E5%8C%BA/@25.0678968,121.58742,15z/data=!4m8!1m2!2m1!1z6KW_6ZuF5ZyWIOWFp-a5luS4iee4vQ!3m4!1s0x3442ac85b9062427:0x91f123e0976ad553!8m2!3d25.0717082!4d121.5922631"
-                target="_blank">台北市內湖區成功路二段325號B1
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
-
-        <td>07:00~21:00(一)~(日)</td>
-    </tr>
-    <tr>
-        <td>天母西路店</td>
-        <td>(02)-2874-8051</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E6%A5%B5%E5%93%81%E5%92%96%E5%95%A1/@25.1184678,121.5249963,17z/data=!3m1!4b1!4m5!3m4!1s0x3442ae87befdf8a7:0x8d5fcbe81b34eca8!8m2!3d25.1184678!4d121.527185"
-                target="_blank">台北市士林區天母西路45號一樓
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
-
-        <td>07:00~21:00(一)~(日)</td>
-    </tr>
-    <tr>
-        <td>台大醫院店</td>
-        <td>(02)-2322-5907</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/100%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E6%AD%A3%E5%8D%80%E4%B8%AD%E5%B1%B1%E5%8D%97%E8%B7%AF7%E8%99%9F/@25.0402741,121.5169704,17z/data=!3m1!4b1!4m5!3m4!1s0x3442a97438d6743d:0xb8f929882567b92!8m2!3d25.0402741!4d121.5191591"
-                target="_blank">台北市中正區中山南路7號
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
-
-        <td>07:00~21:00(一)~(日)</td>
-    </tr>
-    <tr>
-        <td>新店中央店</td>
-        <td>(02)-2219-7918</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E6%A5%B5%E5%93%81%E5%92%96%E5%95%A1/@24.9738939,121.5281978,17z/data=!3m1!4b1!4m5!3m4!1s0x346802192567d97b:0xc220bab9a054d33b!8m2!3d24.9738939!4d121.5303865"
-                target="_blank">新北市新店區中央路131號一樓
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
-
-        <td>07:00~21:00(一)~(日)</td>
-    </tr>
-    <tr>
-        <td>頂溪店</td>
-        <td>(02)-2926-2102</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E5%92%96%E5%95%A1(%E9%A0%82%E6%BA%AA%E5%BA%97)/@25.0120826,121.5131714,17z/data=!3m1!4b1!4m5!3m4!1s0x3442a9ea1a3f630d:0xfa93c955400c315b!8m2!3d25.0120826!4d121.5153601"
-                target="_blank">新北市永和區永和路二段116號1樓
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
-
-        <td>07:00~21:00(一)~(日)</td>
-    </tr>
-    <tr>
-        <td>中總元化店</td>
-        <td>(03)-4276-175</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/BARISTA+COFFEE/@24.9622949,121.2223855,17z/data=!3m1!4b1!4m5!3m4!1s0x34682236cd501a01:0x93cca389edf99319!8m2!3d24.9622949!4d121.2245742"
-                target="_blank">桃園市中壢區元化路317號
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
-
-        <td>07:00~21:00(一)~(日)</td>
-    </tr>
-    <tr>
-        <td>關西服務處</td>
-        <td>(03)-5877-198</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/Barista+Coffee/@24.801103,121.1902543,17z/data=!3m1!4b1!4m5!3m4!1s0x34683ebdbe349031:0x23629cf837156fac!8m2!3d24.801103!4d121.192443"
-                target="_blank">新竹縣關西鎮東安里11鄰上三屯14號
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
-
-        <td>07:00~23:00(一)~(日)
-            <br>07:00~24:00(六)~(日)</td>
-    </tr>
-    <tr>
-        <td>清水休息站</td>
-        <td>(04)-2620-2989</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E6%A5%B5%E5%93%81%E5%92%96%E5%95%A1/@24.2812728,120.5991893,17z/data=!3m1!4b1!4m5!3m4!1s0x346913ec14adfdd5:0x5dcfaeffadf51750!8m2!3d24.2812728!4d120.601378"
-                target="_blank">台中市清水區吳厝里吳厝二街89號
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
-
-        <td>06:00~24:00(一)~(日)</td>
-    </tr>
-    <tr>
-        <td>台中榮總店</td>
-        <td>(04)-2359-1887</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E6%A5%B5%E5%93%81%E5%92%96%E5%95%A1(%E8%87%BA%E4%B8%AD%E6%A6%AE%E7%B8%BD%E9%96%80%E5%B8%82)/@24.1837584,120.6015179,17z/data=!3m1!4b1!4m5!3m4!1s0x346915f691a17e55:0x14f22072792ddb3d!8m2!3d24.1837584!4d120.6037066"
-                target="_blank">台中市台灣大道四段1650號
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
-
-        <td>07:00~18:00(一)~(五)
-            <br>07:00~14:00(六)
-            <br>不營業(日)</td>
-    </tr>
-    <tr>
-        <td>沙鹿店</td>
-        <td>(04)-2658-3765</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E6%A5%B5%E5%93%81%E5%92%96%E5%95%A1(%E6%B2%99%E9%B9%BF%E9%96%80%E5%B8%82)/@24.2472296,120.5406348,17z/data=!3m1!4b1!4m5!3m4!1s0x346914c4d358ad61:0xf543707ec94c9701!8m2!3d24.2472296!4d120.5428235"
-                target="_blank">台中市梧棲區中棲路一段699號
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
-
-        <td>07:00~21:00(一)~(五)
-            <br>07:00~16:00(六)~(日)</td>
-    </tr>
-    <tr>
-        <td>新營服務處</td>
-        <td>(06)-632-2091</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/%E6%96%B0%E7%87%9F%E6%9C%8D%E5%8B%99%E5%8D%80(%E5%8D%97%E4%B8%8B)/@23.3405433,120.3104809,17z/data=!4m8!1m2!2m1!1zNzMx5Y-w5Y2X5biC5b6M5aOB5Y2A56u55paw6YeM5paw5Y6dNjnomZ8!3m4!1s0x346e85a68c319229:0x10fad5d73489983d!8m2!3d23.3407342!4d120.3120142"
-                target="_blank">台南市後壁區竹新里新厝69號(新營服務區南下)
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
-
-        <td>08:00~20:00(一)~(五)
-            <br>07:00~21:00(六)~(日)</td>
-    </tr>
-    <tr>
-        <td>漢神本館店</td>
-        <td>(07)-215-4355</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/Barista+Coffee/@22.619333,120.2937293,17z/data=!3m1!4b1!4m5!3m4!1s0x346e047fb63db33b:0xf00a579d80dbf8e4!8m2!3d22.619333!4d120.295918"
-                target="_blank">高雄市前金區成功一路266-1號4樓(漢神百貨)
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a></td>
-
-        <td>
-            11:00~22:00(一)~(四)
-            <br> 11:00~22:30(五)
-            <br> 10:30~22:30(六)
-            <br> 10:30~22:00日
-        </td>
-    </tr>
-    <tr>
-        <td>高雄榮總店</td>
-        <td>(07)-345-2849</td>
-        <td>
-            <a href="https://www.google.com.tw/maps/place/%E8%A5%BF%E9%9B%85%E5%9C%96%E6%A5%B5%E5%93%81%E5%92%96%E5%95%A1(%E9%AB%98%E9%9B%84%E6%A6%AE%E7%B8%BD%E5%BA%97)/@22.6779942,120.3204568,17z/data=!4m8!1m2!2m1!1z6KW_6ZuF5ZyWIOmrmOmbhOamrue4vQ!3m4!1s0x346e054052faacd5:0x880842c2c5495666!8m2!3d22.6784515!4d120.3227869"
-                target="_blank">高雄市左營區大中一路368號1樓
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </a>
-        </td>
-
-        <td>07:00~21:00(一)~(日)</td>
-    </tr>
-
-</table>
-<div id="data_for_phone"></div>
-</div>
-<!--forHead.js的container-->
-<script src="js/forFoot.js"></script>
-<script src="js/forJs.js"></script>
-<script>
-    function change_area(area_index) {
-        switch (area_index) {
-            case 1: center = { lat: 25.0375415, lng: 121.5644328 }; break;
-            case 2: center = { lat: 24.1508684, lng: 120.664475 }; break;
-            case 3: center = { lat: 22.6376063, lng: 120.397741 }; break;
-        }
-        zoom = 10;
-        $("#store_sub div").removeClass("sub_for_area");
-        $("#store_sub div").eq(area_index - 1).addClass("sub_for_area");
-        initMap();
-    }
-    var zoom = 5;
-    var center = { lat: 24, lng: 121 };
-    function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: zoom,
-            center: center
-        });
-
-        var labels = ["榮星紅樓店", "台大店", "新遠企店", "明基店", "忠孝倍利店", "BP極品嚴培忠孝延吉店", "內湖禮客店", "微風廣場店",
-            "內湖禮客二店", "世貿旗艦店", "西湖店", "振醫店", "南港中信店", "仁愛光復店", "貝瑞斯塔市集", "大直店", "忠孝永春店", "內湖三總店",
-            "天母西路店", "台大醫院店", "新店中央店", "頂溪店", "中總元化店", "關西服務處", "清水休息站", "台中榮總店", "沙鹿店", "新營服務處",
-            "溪神本館店", "高雄榮總店"];
-
-        var markers = locations.map(function (location, i) {
-            return new google.maps.Marker({
-                position: location,
-                label: labels[i % labels.length]
-            });
-        });
-
-        var markerCluster = new MarkerClusterer(map, markers,
-            { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
-    }
-    var locations = [
-        { lat: 25.0625138, lng: 121.54108150000002 },
-        { lat: 25.018073, lng: 121.533334 },
-        { lat: 25.026200, lng: 121.549531 },
-        { lat: 25.081009, lng: 121.564733 },
-        { lat: 25.043064, lng: 121.530894 },
-        { lat: 25.041194, lng: 121.554460 },
-        { lat: 25.064243, lng: 121.574760 },
-        { lat: 25.045948, lng: 121.544119 },
-        { lat: 25.064345, lng: 121.574703 },
-        { lat: 25.03284, lng: 121.560112 },
-        { lat: 25.082060, lng: 121.5659382 },
-        { lat: 25.117512, lng: 121.522467 },
-        { lat: 25.059970, lng: 121.615264 },
-        { lat: 25.038009, lng: 121.557339 },
-        { lat: 25.038009, lng: 121.557339 },
-        { lat: 25.080169, lng: 121.550140 },
-        { lat: 25.041439, lng: 121.579394 },
-        { lat: 25.071831, lng: 121.589956 },
-        { lat: 25.118598, lng: 121.527122 },
-        { lat: 25.040274, lng: 121.519159 },
-        { lat: 24.973889, lng: 121.530534 },
-        { lat: 25.011994, lng: 121.515149 },
-        { lat: 24.962295, lng: 121.224574 },
-        { lat: 24.801103, lng: 121.192443 },
-        { lat: 24.281224, lng: 120.601371 },
-        { lat: 24.183758, lng: 120.603707 },
-        { lat: 24.247463, lng: 120.542674 },
-        { lat: 23.340734, lng: 120.312014 },
-        { lat: 22.619482, lng: 120.296618 },
-        { lat: 22.677288, lng: 120.321879 },
-    ]
+<script src="./scripts/plugins/greensock/gsap.min.js"></script>
+<script src="./scripts/plugins/greensock/DrawSVGPlugin.min.js"></script>
+<script src="./scripts/plugins/greensock/MotionPathPlugin.min.js"></script>
 
 
-    $(window).resize(function () {
-        resize();
-    });
-    function init() {
-        resize();
-    }
-    function resize() {
-        if ($(window).outerWidth() > 500) {
-            $("#data_for_phone").removeClass("for_phone");
-            $("#data_for_phone").hide();
-            $("table").show();
-            $("#start").removeClass("start_form_top");
-            $("#start").addClass("start");
-            $("#store_sub").removeClass("col-12");
-        }
-        else {
-            if (!$("#data_for_phone").hasClass("for_phone")) {
-                $("table").hide();
-                $("#data_for_phone").show();
-                var count_of_data = $("table tbody").children().length;
-                $("#data_for_phone").html("");
-                for (var i = 1; i < count_of_data - 1; i++) {
-                    var this_tr = $("table tbody tr").eq(i);
-                    var td_content = [];
-                    for (var j = 0; j < 3; j++) {
-                        td_content[j] = this_tr.children("td").eq(j).html();
-                    }
-                    $("#data_for_phone").append(
-                        "<div><p class='store_name'>" +
-                        td_content[0] +
-                        "</p><p><img src='images/phone_icon.png' width='13px;'>&nbsp;&nbsp;" +
-                        td_content[1] +
-                        "</p><p><img src='images/address_icon.png' width='13px;'>&nbsp;&nbsp;" +
-                        td_content[2] +
-                        "</p></div><div style='clear:both;'></div>"
-                    );
-                }
-                $("#store_sub").addClass("col-12");
-                $("#start").addClass("start_form_top");
-                $("#start").removeClass("start");
-                $("#data_for_phone").addClass("for_phone");
-            }
-
-        }
-    }
-    init();
-
-
-
-
-
-
-</script>
-<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx9eSnetY3O0sqCbFV2K24vkrtJIPiRTo&callback=initMap">
-</script>
+<script src="./scripts/default/function.js"></script>
+<script src="./scripts/default/ui.js"></script>
 </body>
 
 </html>
