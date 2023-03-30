@@ -1,0 +1,71 @@
+#data{
+    padding: 50px;
+        font-family: "Montserrat",
+        "Noto Sans TC";
+    h1 {
+        font-size: 28px;
+    }
+    .date-wrapper{
+        border:1px solid rgba(218, 218, 218, 1);
+        padding:10px 10px;
+        position: relative;
+        cursor: pointer;
+        input{
+            cursor: pointer;
+        }
+        .icon-date{
+            font-size: 24px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+            pointer-events: none;
+        }
+
+    } 
+    .submit,
+    .excel {
+        background: #08184B;
+        color:white;
+        height: 46px;
+        padding: 0 19px;
+        min-width: 100px;
+        margin-left: 10px;
+        transition: background .3s;
+        i{
+            font-size: 24px;
+        }
+        &:hover{
+            background: #0C2165;
+        }
+    }
+    table{
+        width: 100%;
+        border-top:1px solid black;
+        border-bottom:1px solid black;
+        thead{
+            background: rgba(239, 239, 239, 1);
+        }
+        tbody{
+            tr{
+                &:not(:first-child){
+                    border-top:1px solid rgba(218, 218, 218, 1);
+                }
+            }
+        }
+        td,th{
+            padding:10px 10px;
+        }
+    }
+    p{
+        margin-top: 50px;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+#ui-datepicker-div{
+    .ui-widget-header{
+        background: #08184B;
+        border:1px solid #08184B;
+    }
+}

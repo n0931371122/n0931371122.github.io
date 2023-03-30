@@ -1,0 +1,138 @@
+.contact-section{
+    background: #08184B;
+    padding: 0 40px;
+    .block{
+        max-width: 1648px;
+        padding: 128px 40px 100px 40px;
+        background: url(images/common/contact-bg.webp) center no-repeat;
+        background-size: cover;
+        .box{
+            max-width: 924px;
+            .title-inner{
+                position: relative;
+                .title{
+                    margin-bottom: 8px;
+                    &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        bottom:28px;
+                        left: 0;
+                        width: 80px;
+                        height: 1px;
+                        background: #A08862;
+                    }
+                    span:nth-child(2) {
+                        padding-left: 105px;
+                    }
+                }
+
+
+            }
+            .form-group {
+                display: flex;
+                align-items: center;
+                padding:8px 8px 8px 16px;
+                border: 1px solid rgba(255, 255, 255, 0.4);
+                letter-spacing: 1px;
+                input {
+                    color: white;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    width: 0;
+                    flex-grow: 1;
+                    height: 33px;
+                }
+            }
+            .submit{
+                font-size: 20px;
+                &:hover{
+                    .circle{
+                        background: #D0B180;
+                    }
+                }
+                img{
+                    margin-right: -32px;
+                    z-index: 1;
+                }
+                .circle{
+                    width: 60px;
+                    height: 60px;
+                    background: #A08862;
+                    border-radius: 50%;
+                    transition: background .3s;
+                }
+            }
+        }  
+    }
+    @media(max-width:991px){
+        padding: 0;
+        .block{
+            padding: 71px 40px 80px 40px;
+            .box{   
+                .title-inner{           
+                    padding-top: 0;
+                    .title{
+                        padding-bottom: 17px;
+                        margin-bottom: 20px;
+                        line-height: 1.45;
+                        &::before{
+                            width: 28px;
+                            top: auto;
+                            bottom: 0;
+                        }
+                        span:nth-child(2){
+                            padding-left: 0;
+                        }
+                    }
+                }
+                .form-group{
+                        padding: 6px 6px 6px 12px;
+                }
+                .submit{
+                    font-size: 18px;
+                }
+            }
+            
+        }
+    }
+}
+#successModal{
+    .modal-dialog{
+        max-width: 496px;
+        padding: 0 24px;
+        margin: auto;
+        .modal-content{
+            background: transparent;
+            border:none;
+            .modal-body{
+                padding: 0;
+                img{
+                    max-width: 100%;
+                }
+                .text{
+                    padding: 0 80px;
+                    padding-top: 40px;
+                    padding-bottom: 32px;
+                    color:white;
+                    text-align: center;
+                    background: #08184B;
+                    button{
+                        background: #C7A164;
+                        width: 170px;
+                        height: 50px;
+                        margin: 0 auto;
+                        color:white;
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:575px){
+        .modal-dialog .modal-content .modal-body .text{
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+    }
+}
